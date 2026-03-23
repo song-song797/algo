@@ -1,0 +1,23 @@
+埃氏筛与欧拉筛模板
+============
+日期：2026-02-25
+
+思路：
+
+
+伪代码：
+vector<bool> is_prime(n+1,true);
+is_prime[0]=is_prime[1]=false;
+vector<bool> primes;
+for(long long i=2;i<=n;i++){
+  if(is_prime[i]){
+    primes.push_back(i);
+  }
+  for(int p:primes){
+    if(i*p<=n)
+      is_prime[i*p]=false;
+    if(i%p==0) break;
+  }
+}
+复杂度分析：
+

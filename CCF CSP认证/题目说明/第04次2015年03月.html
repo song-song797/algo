@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第04次2015年03月</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+    line-height: 1.8; color: #1a1a2e; background: #f0f2f5;
+    padding: 20px;
+}
+.container {
+    max-width: 900px; margin: 0 auto;
+    background: #fff; border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 40px 50px;
+}
+h1 {
+    font-size: 28px; color: #16213e; border-bottom: 3px solid #0f3460;
+    padding-bottom: 12px; margin-bottom: 20px;
+}
+h2 {
+    font-size: 20px; color: #0f3460; margin-top: 28px; margin-bottom: 12px;
+    padding-bottom: 6px; border-bottom: 2px solid #e0e6ed;
+}
+h3 { font-size: 17px; color: #16213e; margin-top: 18px; margin-bottom: 8px; }
+p { margin: 10px 0; text-align: justify; }
+ul, ol { margin: 10px 0 10px 24px; }
+li { margin: 4px 0; }
+strong { color: #0f3460; }
+code {
+    background: #f0f4f8; padding: 2px 6px; border-radius: 4px;
+    font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace;
+    font-size: 0.9em; color: #e94560;
+}
+pre {
+    background: #1a1a2e; color: #e0e0e0; padding: 16px 20px;
+    border-radius: 8px; overflow-x: auto; margin: 14px 0;
+    font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace;
+    font-size: 14px; line-height: 1.6; white-space: pre-wrap;
+}
+pre code { background: none; color: inherit; padding: 0; font-size: inherit; }
+table {
+    width: auto; border-collapse: collapse; margin: 14px 0;
+    font-size: 14px;
+}
+th, td {
+    border: 1px solid #d1d9e6; padding: 8px 12px; text-align: left;
+}
+th { background: #f0f4f8; font-weight: 600; color: #0f3460; }
+tr:nth-child(even) { background: #fafbfc; }
+hr { border: none; border-top: 1px solid #e0e6ed; margin: 30px 0; }
+img { max-width: 100%; height: auto; border-radius: 6px; margin: 10px 0; display: block; }
+.meta { color: #6c757d; font-size: 15px; }
+.meta li { list-style: none; }
+.meta ul { margin-left: 0; padding-left: 0; }
+.problem { margin-bottom: 30px; }
+.problem-header {
+    font-size: 20px; color: #0f3460; margin-top: 28px; margin-bottom: 12px;
+    padding-bottom: 6px; border-bottom: 2px solid #e0e6ed;
+}
+.limits { color: #555; font-size: 14px; margin-bottom: 12px; }
+.test-case { margin: 10px 0; }
+.test-case pre { background: #263238; }
+/* 原始HTML中的样式兼容 */
+span[style] { /* 保留原始 inline style */ }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>第04次2015年03月</h1>
+<div class="meta"><ul>
+<li><strong>考试时长</strong>：240 分钟</li>
+<li><strong>总分</strong>：500 分</li>
+<li><strong>题目数量</strong>：5 题</li>
+<li><strong>编程语言</strong>：C/C++</li>
+</ul></div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 1 题：图像旋转（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2>问题描述</h2><p>旋转是图像处理的基本操作，在这个问题中，你需要将一个图像逆时针旋转90度。</p><p>计算机中的图像表示可以用一个矩阵来表示，为了旋转一个图像，只需要将对应的矩阵旋转即可。</p><h2>输入格式</h2><p>输入的第一行包含两个整数n, m，分别表示图像矩阵的行数和列数。</p><p>接下来n行每行包含m个整数，表示输入的图像。</p><h2>输出格式</h2><p>输出m行，每行包含n个整数，表示原始矩阵逆时针旋转90度后的矩阵。</p><h2>评测用例规模与约定</h2><p>1 ≤ n, m ≤ 1,000，矩阵中的数都是不超过1000的非负整数。</p></div>
+<div class="test-case"><p><strong>输入：</strong></p><pre><code>2 3
+1 5 3
+3 2 4</code></pre>
+<p><strong>输出：</strong></p><pre><code>3 4
+5 2
+1 3</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 2 题：数字排序（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2>问题描述</h2><p>给定n个整数，请统计出每个整数出现的次数，按出现次数从多到少的顺序输出。</p><h2>输入格式</h2><p>输入的第一行包含一个整数n，表示给定数字的个数。</p><p>第二行包含n个整数，相邻的整数之间用一个空格分隔，表示所给定的整数。</p><h2>输出格式</h2><p>输出多行，每行包含两个整数，分别表示一个给定的整数和它出现的次数。按出现次数递减的顺序输出。如果两个整数出现的次数一样多，则先输出值较小的，然后输出值较大的。</p><h2>评测用例规模与约定</h2><p>1 ≤ n ≤ 1000，给出的数都是不超过1000的非负整数。</p></div>
+<div class="test-case"><p><strong>输入：</strong></p><pre><code>12
+5 2 3 3 1 3 4 2 5 2 3 5</code></pre>
+<p><strong>输出：</strong></p><pre><code>3 4
+2 3
+5 3
+1 1
+4 1</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 3 题：节日（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2>问题描述</h2><p>有一类节日的日期并不是固定的，而是以“a月的第b个星期c”的形式定下来的，比如说母亲节就定为每年的五月的第二个星期日。</p><p>现在，给你a，b，c和y1, y2(1850 ≤ y1, y2 ≤ 2050)，希望你输出从公元y1年到公元y2年间的每年的a月的第b个星期c的日期。</p><p>提示：关于闰年的规则：年份是400的整数倍时是闰年，否则年份是4的倍数并且不是100的倍数时是闰年，其他年份都不是闰年。例如1900年就不是闰年，而2000年是闰年。</p><p>为了方便你推算，已知1850年1月1日是星期二。</p><h2>输入格式</h2><p>输入包含恰好一行，有五个整数a, b, c, y1, y2。其中c=1, 2, ……, 6, 7分别表示星期一、二、……、六、日。</p><h2>输出格式</h2><p>对于y1和y2之间的每一个年份，包括y1和y2，按照年份从小到大的顺序输出一行。</p><p>如果该年的a月第b个星期c确实存在，则以"yyyy/mm/dd"的格式输出，即输出四位数的年份，两位数的月份，两位数的日期，中间用斜杠“/”分隔，位数不足时前补零。</p><p>如果该年的a月第b个星期c并不存在，则输出"none"（不包含双引号)。</p><h2>评测用例规模与约定</h2><p>所有评测用例都满足：1 ≤ a ≤ 12，1 ≤ b ≤ 5，1 ≤ c ≤ 7，1850 ≤ y1, y2 ≤ 2050。</p></div>
+<div class="test-case"><p><strong>输入：</strong></p><pre><code>5 2 7 2014 2015</code></pre>
+<p><strong>输出：</strong></p><pre><code>2014/05/11
+2015/05/10</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 4 题：网络延时（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2>问题描述</h2><p>给定一个公司的网络，由n台交换机和m台终端电脑组成，交换机与交换机、交换机与电脑之间使用网络连接。交换机按层级设置，编号为1的交换机为根交换机，层级为1。其他的交换机都连接到一台比自己上一层的交换机上，其层级为对应交换机的层级加1。所有的终端电脑都直接连接到交换机上。</p><p>当信息在电脑、交换机之间传递时，每一步只能通过自己传递到自己所连接的另一台电脑或交换机。请问，电脑与电脑之间传递消息、或者电脑与交换机之间传递消息、或者交换机与交换机之间传递消息最多需要多少步。</p><h2>输入格式</h2><p>输入的第一行包含两个整数n, m，分别表示交换机的台数和终端电脑的台数。</p><p>第二行包含n - 1个整数，分别表示第2、3、……、n台交换机所连接的比自己上一层的交换机的编号。第i台交换机所连接的上一层的交换机编号一定比自己的编号小。</p><p>第三行包含m个整数，分别表示第1、2、……、m台终端电脑所连接的交换机的编号。</p><h2>输出格式</h2><p>输出一个整数，表示消息传递最多需要的步数。</p><h2>样例说明1</h2><p>样例的网络连接模式如下，其中圆圈表示交换机，方框表示电脑：</p><p><img src="data:image/png;base64,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" alt="" data-href="" style=""/></p><p><span style="color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);">其中电脑1与交换机4之间的消息传递花费的时间最长，为4个单位时间。</span></p><h2>样例说明2</h2><p>样例的网络连接模式如下：</p><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASoAAAEqCAIAAAAtWIp4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAACFKSURBVHhe7Z1RiF3Hecf3QUEBEQtKjFmSoIIeDMZ4QSaENoFVEdiQQrcERGzSyKUvCS7pJU2cpNCwhELrOrRLCiqpSPBTo0ixWQiUOK7LPoQUo2KEi2MlUNgQyXrIi2RLEJtlUf878/en0dmzc+89d86Zb+Z8vwex57tz5n5zzvzn+2bm3KOlO4ZhZMLkZxjZMPkZRjZMfoaRDZOfYWTD5GcY2TD5GQnYcmxsbKwHbG5uwri9vc1Cxj5MfkZHoK7JZLKysrI0jaNHj66trUGcJsUGJj9jPhDQnnrqKSiK2poTyBU6vHHjBqsbNyY/Y1YQ7lZXVymj94EOYUSq+fzzz7sM9B5gh1b3R0ichY9MhCY/YzqXL19uCO/YsWPIPGFniWlAadAnUlCe7/AiZIlRYvIzpgCFUC4O6BBhkJ/ND6Z/qDDMXREbZ5dxZZj8jAOBVMK8EX8jn+Rni4Fg2FA1YiM/GxMmP6MdRCSJUfhjY2ODH6QD8g5zWswS+cFoMPkZLYTa6zs5DMPg2BRo8jOahNpbW1sbYH0Smad846gUaPIz7iHU3pBKyPW9eTH5GXdBoDt27FguDYQK7GOqqRCTn3EX2ZfDfI+mYdnc3PQOgF4nnEow+RkEAcf3ewTAjM+jyEpMriFgSEx+xh7QmyR+qTb3OiO7EZAiTZVi8jP2wEzP9/jJZEJTPra3t/1YgH/r/pGEyc/Y6+5ee+juGdPOEElB614FNfkZd0OfnmQvTIaVjAh9YPIbO9LR9YQ+jwTAimeAJr+x8/zzz+vs5RgLvGPHjh2jqTpMfmNH9voULnJIVlzrHqDJb9RIhNG5ySa78LXmnya/UbO1taW8f3v3VldXeVwXJr9RI8sb2bfaD0K24HlcFya/UZO4c+++8d/fe+YfTv/eQxd/Q8vCTCYT72GV0z+T36jBlA89O9HS4rvXL5xwSjmeUH6yMKs2Pi+CyW/U+J6dcmb11vqZpPLTPztdBJPfqPE9O+WDXSa/eTD5jZr0PTu1/EB6J9Vg8hs16Xu2yW8eTH6jJn3PTi0/eTDA5GfUhu/ZtvSSC5PfqPE9uwj5VfnyJZPfqPHb7kePHuXx4uzJb3n53JUdHi+KvIHG9v2M2pCfFKT4pZ9suzvOvPgG7QshHlb51gmT36iR2LLIf1rUK/65nJTxWRMmv1Fz+fJlL7+UO+/pkJfQrK2t0VQXJr+x4980ofMX5RKcq1x3ASa/sSOTK4VrGz7zBLW+btDkN3bkF+Xa8k/JPFPuiyjD5Gfckf9WRVWQkbBc8X98a/Iz7k6x9ARACX0Vv+YMmPyMe95pq+RH5fL+tbr/z3eTn7GH/Khcw0RLpqN1hz5g8jOILDPmfbg5DMVqHwZIhcnPILIFDzKmoP4xVFDrVnuIyc+4C+Ke7/qIP1kUKKudSDtTPIaqHZOfcQ/h/y89sABkATaX+IfH5GfcAyT34Q9/2MsAChxMBvI+T1D3ameIyc+4B0n/PMMEovBLx6M9YPIzCOKeZJ7gYx/7GP/q84nn7e1tWXEFo9IeMPkZe0B7IgNEvM3NzYYaV1dXkz+Str6+LnsM/kv5wWgw+Rn3hKBGtilroR5kiUlEiCgnD5qCISeZqjD5jR30ewlBrTKAJcwPAUTYTS2IqA3hgSpfYTYjJr9R09Ae5MEP9hEmih6oaDKZzPIrQQRMqC5MZT19JLRlYfIbL5AEdeCUENGeBwUgwkbs8kC6qAGfhkBvMDZE68FHVb65bF5MfiMl1B6SSVpnY3Nzc38omwWoFLIcecQLMfmNkXCfbV7thSCCQU4Ica0h0YNP8RVQu6luPya/0RFqD6qgNRGYTEKTYGoqawCT34iAJBCLqLzx7XErxOQ3FqA92T84evQoAhQ/MPJh8hsF4d4dtNdt185Ijsmvfhqbe7YEogeTX+UgyQy1ZysiqjD51Uy4ube2tmba04bJr1rkx+Ngkc09oz9MfnUSbu5NJhNaDWWY/Cqk1411IyEmv6pobO6Z9pRj8quHhvZsc08/Jr9KgNjkuWfTXimY/GqgsbFuGwylYPIrHkzwTHuFYvIrm3Bj/amnnjLtlYXJrzAgMPd7ui0I7/HHH6fylpbwt2mvOEx+BbC9vb2xsbG2thb5UbkHWejq6ioK29JLEZj89IJoBiHJXsK8QKv2YhXlmPw0As2ET64IkCLsENXm5qZPQT04hBEftWoVdhOhTkx+ukDEg5Com/dB2omZ3oxTOxSDGverdzKZ2ORQGyY/RSCOhbM7TOQgxc6awYnIXRsVjvD/UdCMyU8LYdBbUHgNIELZGAQIjPzAyI3JLz+QWfjW2tUeXr3e+ArbnVeCyS8zkEG4XoJIxQ96AJmnhEFToAZMfjkJtQdhDLBZFz6ZbQrMjskvJ/LS22G05wk1bwrMi8kvG7I3MKT2PKECMSek1Rgck18eMA3zvX947Xm2t7dlHtjrhNOIYPLLAIKPdP2M74PY2tryPoAsQ4Bh8suA7AFkfweZbDZiFkqTMSAmv6GRmHPs2DENyx4yCcwYh0eLyW9oZLVTSXcPhwOajKEw+Q2K9HVVyZ4kwxYAB8bkNyiy2aDq0efLly97r2wGODAmv+HATM/3coVpnqTE9svAITH5DQdSO9/FFe6ziW/r6+s0Gf1j8hsOmWIpjDASmVdWVmgy+sfkNxx+q11t/5bRQcN2yEgw+Q2ELG+o/e++ZAt+a2uLJqNnTH4DIZOrFIv7O7d+8c/PPnHE1ffYyfNXfkv7QsimiE3/BsPkNxApY8utH3zrob85e+29O7uvv/KV5aWlhx+5+OsdftYdmf7Z2ygGw+Q3ELLjx+Pu7Lz9H1/4qyu/49HNs1+DAM+8+AaPF8J7aLt/g2HyGwjZWONxMl574XOHU8nPO2nyGwyT30D0Jb/dV773R4eXz11ZPPkEJr+BMfkNhO/ZyZ932b3y9MP3P3fx1i6PF8PkNzAmv4HwPRvwOAm7ly6c+MzTv7jJw4Ux+Q2MyW8gepDf1Uvf/Pipl68lSTs9/rd/Jr/BMPkNxGQySSq/29f+/U8e/2lK7QHvoclvMEx+A5H0mZLb1186ffJfXn9/t/329Z88efqlRffeZd9P7XM59WHyGwh5tdnCT71c/+X5Uyd9XcJj399aePFFnnqxF58NhslvILa3t33nVvtMiT3zOTwmv+Hwv3hQ+0oVeecSj43+sWs9HPLcmcKXasrEz9ZdhsTkNxwy/VO4toH5nvfNJn5DYvIbFJ9/4l8eqwEpsZefvetlSEx+gyL5Z4pf/SVD1jztv1sZGJPfoMj6p6oFGHkix9Y8B8bkNzQSAJX8qFxmpLboMjwmv6GRAIgZYPaJ1o0bN2TWZ6FveEx+GZAN7uwBR0KxzfqyYPLLQBhzMqag8vYnxGG4RKsxICa/PMh7B0GWVdDQAVX/4cSoMPllQ3a6P/ShDw38HAy+zu9AAvt9Q0ZMftnY2tp64IEHvAYghsFCUKi9lZUVSzszYvLLALJNmfuFDJCFQuSiPQ88seQzFya/4UCcWV9fb/R+xJ9PfvKTPHA/R+ovHMmKKzh+/Ph9993HA7fyaY+bDY/JbwjQs2WJX0CPl622UBgIR8m34JBwyu+JAJyBEV7Jf6sCMC5kXIYdJya/foGQ5JEuD3o5ev/+UNNIC1OFo4by8RWNFBcehpkwVJpc/MZBmPx6AQnk/gkeDhFeIrklpNLQahgh5wURrxFyUXnrEqvPilnIgRP7y4ENweSXGEgIXXn/BG/2ZRWEwf26nUwmMy6QQK4o3Khhf9DbT0P8OMV++9c3Jr9k7I82AJZu4Wt/8PRAyQiJUHgDGMPZnYBKoKLZQ1kjBz4oYBpJMPklAF12/wQPIWjxyRukCwE3YumMQJAzBswG0CqcZy0OHFou2gcmv+6gR7ZO8OaKNjMCHSLEQeStIdEDlaIAinWeLoY0Fkvxvd3EbEQw+XUBYQ0BoRGU0PVnn+AtCByAxoTFw+xBYChp5KL9fdcIMfnNB/p6wgleESCSh02GGhFg+ZmxGCa/WUFk2z/BQ0ccSTTA+BLmvfi74hFnMEx+U8DYjwSsMePCIdQ4wtUIDDdhLrq2tjbCi5AQk9+BHDTBG/kKBC5LmAXg+tj2YGdMfi0cNMGzHTABY1CYEaysrNjF6YDJ7x6QUjY2r0c1wZsLpJ24MrxMDtsenBeT3x6+J9kErwMIeo1cdLDdlwoYu/wQ1pBV7p/g2bLeXEBy4TXEBbR8YRbGKz8IbC34tZsHUrR+0w2kCY0JMxIKyx3ijFF+B03wrK8sDga1xqNqlkdEqFx+UBRuP6QFJpPJo48++sEPfpBdw/HAAw/YXCUtSB8++9nPHj58mJd4aekjH/mI/Epjc3PT1kiFOuWHe4xEqLGUEgEDNnqGdYvOYJjDKAaNNWbREVB4Y2Nj5Kl+VfKDfvavo8wFFNvH7xUqBiPd/in0XKwO+Ki6NiqRHzLMcPnbAy1BjZATPt0/ysKIroOgt/9EmwrOAjSzP79AHoEkHx/h8jYuoJ8I4CMUaMy9AaoaoQiLlx9uamPBDTcSN3jeTHL/KA4RjnZUjtPY6wOQ07yZJG4cLm9DhziERFliBJQtP2gmTDUXH0HRgRD3wjptC6sBrg8vjQPXZ0HB+CkDq3OM5+mZguWHm8TblTpSNSIqKh/VkHwQuCxh0EsbqRoRFZWPYdQrUn6NfoCksY/BEn0rnNuMPBGFPMKrgRjID5KCDFZSD/wx7wyiOMqTH5QmE4a0QW8/jTA4WgVCBqIKiLBXVSDohfe3bgUWJr+G9oa5N+FsZ4QKDLWHi99HotEAXyHLYHUrsDD55borUJ3/XjAqBUIJknMOoz1B8o6KFViS/GStJcv9EAXWPR43kFxjYO15RIFZvn0AipHf1taWvxMgV++vvjc0kKwbATBLe/Glon9cfForogz54TZICpQ395PegFBMU6VgjPMtzRvtt7e34YD3ZLO6t+yUIT9JOzH3oykTYW+oOwWVgWYj95uUoDrvSa4g3B8FyA893l999HsNVx/d0fuzurpKU3XIRFdJG2XJraf9xlwUID+Zcem59JIJ1/o0jLYGahuCU6FdfnLd0SFoUoCsA2VPhvtAQp+q1Q5ZB8qeDCdEu/zUXnSJDxggaKoFeaBP1eRW50C8INrl53u5wpRDQkRlsxHp5QpntjINqSbnVy0/WftWuOeD4cD7trKyQlMVyMJS3g2eVmQJtJpdH9Xyk8xT54aPLMfVlH9K5qlzhcPv+lSTf6qWn3QFHitD8k+FgaIzvkUKM0+P5J91DHmq5ecvtNquILlxNbmQrOiqndBKblzHEzB65Ze4c7/zyo8my66+5fu//MLWO7u0L4arsJ799346986tV588ufSF9bd2aFgA/QPEXOiVn1zoBFsOu5fOn3p6/c2bd+7cfuunnz65tLx87kqCvvB+eowJCY8LRybbCbccdq995xufOrSUSH7Ae1jHjqte+clInHqV+bUXnziSSn6y+sLjwknfnN1LP/rT3//MZ+5PKD+/+lJHxqG338hInFh+N88+c/iL61ff4+FiiJM8LhwfzNM15/a1H/7B8t//7JcXTiSUn3fS5NcvPSRCO7feOHvuSx9NFfpAlfJLlUvvXl0/vfzcxVvvXTf5HcCI5Lfz6unjvsalhx+5+OskfcHkdyC7ly6c+HOXZbxr8juIAuSXNPm8/uaPv/HsE0eWjn/7YorOUKX8UjTn9rXzJ09c8GOcye9AxiY/8PavvosomKY3yC4wjwsnnfxee+Fzd/+DMeHwP/7PuyzQHf8YsMmvX2TjIfUG687bL586dOr7Wyl2/tL1VxXIkJf0ibPE0c97aPLrF5Ef+gRNKdi99p2v3v+JUy9fS9IXahqJQT8ZR0r5yQ8y0vaKXKgetv2FTrDBevPs1/wTL0tLhz7/3PrP04zD8qMHhT/I6IYMeQkedbhLSvnJjx7qeM5Wtfz8237UPlMiXSFpZ82JDChqnymRl24lfC4nI6rlJwsbOq+1cve6Ib9v5rEylLs3L6rlJ+FF508KKusKHgkvqVe8EiATvzoe+ASq5QfQuXG50dF5rAYZGqqZ+HkQydW2S4aGan5gqV1+kuBpG4zl6eTU25L58VEdaPvBux+L8a/OX+J3QLv8ZC1O1eK+ZEEKw/LiyPaDqsV9ebdATemGdvkB2drWE2ckJtf0mgkBsUVhnJGYXNObdQqQnwRAJaFGmz99IAFQSajR5k8qCpAfkACoIR2S/3ukytDnkQAIsicdCHfiTE2hD5QhP5lrgbybbLL4Vs2DZgchcy0E+bwpqIx3quaiSShDfkDSj4y9QXokBuPKhuFWJOnIuM8m0+zKXmfsKUZ+QHpDljuBqCspUMVpZ0iYgmZ58iEc72p6tEgoSX5hbxh4Ch5qr7LZfxxZZwIDDzqiPVDreFeS/ABk8IEPfMDfEgTDYbLQUHvVPO40I2j7gw8+6NsOBouBofaefPJJWqujMPnJo14eZKF9z8HQD0R7+Lq8ixBDggsr864QGPu+CLK+JdSacRSWfMre65EjR/wf0EZPz6Ph68J+gLg3Eu2hmevr6zLoAIw7X//613ngDnuaiUHzMsMH8mQfqFKBJclPFj9xV3Cf0An8IfAWlksB5jwidZBl4SELiPZhw/G3zLtwTUJN4nakHY82NjakfvzhvzfMQuvLPoqRH9Tl7wFujFca7kSYHcGepEOgk4UDMKpV+NObPkDDwxGt9Xo2Rr1QnIvQ0HwjuoZz78oUWIz8RBKNn5ZDG+GdA9Bkh9QINxWdIBQeSB5UdYI2hmkewDWMNLyRmnqhdrhQOAV3s3H7WsfQUIH4o6fUd3jKkJ9kIBj8aArA3Wp0CICbij4Ecca7BYZ89IBG5wM4HR+xUL3g0jXWOTAAzdK5cVXD1MODu4PacN0iAQofoQDuVxhFPfjqyM3CiXJKNQosQH647iKtiCRQDDe1MZQKuLUNIiVHkm2Gcy2ACzJvw70IGwOfB0Z/nUNaS4IZE5ZQgSBJ3puXAuQnwzNuEk1R0IcO6hMR/MgdD5XV0MjYca0aKf1cQBVQwv4MYioQJL4Xp7Oi2QijbukK1C4/hDt/odFF5r1PGFBxdyEq3OZGqiNjMwIm+uK8NZcLrglazavgwPVJ2HyfWEIh+JZGfoFDGKFSFIhkMbMQKhD+01og2uUnsqkg08jL/tla3wtLMnTie2lKhywHgD7qHwbV8kPs8tcXoyZNxvwguCHghNk4BrUF488sSDra03eFCkQPKTGF0Ss/XE3pMXUsc2UBfTRMAvH3MHkE4qp8I009AGFLJ8GYUpwC9cpPxk6M3DQZ84CuGc540U1xJQfroLJg1rfaMTSLAiH1skZqpfKTaQMuaIlJRV4QeRrrkJgdDbyo6yWBfwe4fWiaDDT4xoIUqFR+ki+NZAsuFejrEnY8mBQN3x1lVjbYsiQaHipwmAR7cTTKDzmSv44YwmkyZmDxbfRUiBKGDLlQYLi0W4QC1clPpuzoSQPnS+WSdht9QWTikGX0DBWof9VAnfyQLJVy7TSAxFKumCftNnoHRAC5Yq/sVwHlW4K65Icb5q8axnKajANAahCO9ADRJnu+IMlL3jsok0+Ay5J3PIqgSH64RjJ16Wmjtg5woZAahNM8zLWUXDGZt2fMfj0YyuUS4froVKAi+cmSnfKEIS8Y18NpHv5WtcbgfUO/19Ddwy1BKFDhhoQW+eHS+Muk5M4pJO82+ixIyqdnAEW/kouGK6ZNgVrkJ+sH2ZMWhWBClX0bfRbkJqryDSNUqMBcC0KtqJCfLFXh/tFkONB1NGyjz4LkLwpvIi5jOH7pSdfzyw+XRhJ0nR0rFxiV5MoATKtUjdwNZBlW1Vw0JFwoVpJk5ZefXJTBHlDSD2QWrq9AhMpzcoyh3lW4TZNKZGEWaJigZpafPCGBHoZbSOuIwQWRGZQn+zb6LEi3xh80aUXWhwAUmPfaZpafjPGa06ph2Fa5jT4jch+LGEOhQMnq824J5pSfDJkjX3HB7celCKd5uCAFPXiAodO7rSGdm5HL924J5hrmsskPDZb2lzLG90E4EgOEEbVLFwch2XJZK2fwVoI2bkEW57PJTxaC9c8WekL/NvosYOj0/qMtNJUDrna4JTh8xpFHfpKuKF8o6wl02cb6SvY1gM7IfLW4oO3BZQ/vxcCtyCA/NFiCfkEznCSg7aVso88CmuMzZ/xLU5mEi15DKnCK/OhRIdDphWF15UC/o7BoOdDvKCxaCHQ6wOTXAqsrB/odhUXLgX5HYdFCoNMBJr8WWF050O8oLFoO9DsKixYCnQ4w+bXA6sqBfkdh0XKg31FYtBDodMCs8uOxSuhiP/KjSR/0z0FTFBZ10KQP+uegKQqLKm4RoIttTk7xm+cV27xusDoHTfqgfw6aorCogyZ90D8HTVFYVHGLAF1sc3KK3zyv2OZ1g9U5aNIH/XPQFIVFHTTpg/45aIrCoopbBOhim5NT/OZ5xTavG6zOQZM+6J+Dpigs6qBJH/TPQVMUFlXcIkAX25yc4jfPK7Z53WB1Dpr0Qf8cNEVhUQdN+qB/DpqisKjiFgG62ObkFL95XrHN6warc9CkD/rnoCkKizpo0gf9c9AUhUUVtwjQxTYnp/jN84ptXjdYnYMmfdA/B01RWNRBkz7on4OmKCyquEWALrY5OcVvnlds87rB6hw06YP+OWiKwqIOmvRB/xw0RWFRxS0CdLHNySl+87xim9cNVuegSR/0z0FTFBZ10KQP+uegKQqLKm4RoIttTk7xm+cV27xusDoHTfqgfw6aorCogyZ90D8HTVFYVHGLAF1sc3KK3zyv2OZ1g9U5aNIH/XPQFIVFHTTpg/45aIrCoopbBOhim5NT/OZ5xTavG6zOQZM+6J+Dpigs6qBJH/TPQVMUFlXcIkAX25yc4jfPK7Z53WB1Dpr0Qf8cNEVhUQdN+qB/DpqisKjiFgG62ObkFL95XrHN6warc9CkD/rnoCkKizpo0gf9c9AUhUUVtwjQxTYnp/jN84ptXjdYnYMmfdA/B01RWNRBkz7on4OmKCyquEWALrY5OcVvnlds87rB6hw06YP+OWiKwqIOmvRB/xw0RWFRxS0CdLHNySl+87xim9cNVuegSR/0z0FTFBZ10KQP+uegKQqLKm4RoIttTk7xm+cV27xusDoHTfqgfw6aorCogyZ90D8HTVFYVHGLAF1sc3KK3zyv2OZ1g9U5aNIH/XPQFIVFHTTpg/45aIrCoopbBOhim5NT/OZ5xTavG6zOQZM+6J+Dpigs6qBJH/TPQVMUFlXcIkAX25yc4jfPS9a822/97Lnz33ro0OdffIOWBNDFdPeA1TloWoR3tl761kPLe5Ut3//lF7be2aV9MZx3hKYoLOqgaRHeeeVHE9cmHY3icSpu/eDZR488dPE3PFwMutjm5BS/eV6q5r21fsZXd2Y88rt66ZsfP/XytV0MPT/99MmlpUN/8eLrKfoq/XPQFIVFHTR1ZvfS+VNPr795c2883WvU8vK5Kzv8bCHon4OmKCya7tbvsfv6K1/ByHK8Ovnt8doLnzs8Ivnd/O6T//SL97vm//3XV+5bWvrC+lsJ+ir9c9AUhUUdNKXhtRefOFKR/G5f++EfLK/98UmT34zQxXROsjoHTWl49/qFE7XJ7+bZZw5/cf3qezxcDPrnoCkKi6Zr0e7V9dPLz/38zb89Y/KbEbqYzklW56ApDW//6rvHlx77/lbpySfZufXG2XNf+miq0Afon4OmKCyaqkW7ly4+9uDpV2+4WZLJbzboYjonWZ2DpiTsvnJu+Q/37m4K6J+Dpigs6qBpMXZePX2c9T38yMVfl5983r52/uSJC64hJr/ZoYvpnGR1DpoSsHd3H/nX//0tDxeF/jloisKiDpoScP3NH3/j2SeOLB3/9sUU+qN/DpqisGiKFiHtPHHiAlfFTH6zQxfTOcnqHDQtys6tV//sob986Y006/N70D8HTVFY1EFTGlxGnXtCy+Pu+Gn5PlIMK6yqzckpfvO8lDdsjPLbvfp3p574SULtAfrnoCkKizpoSsPO2y+fOnQq84SWx6moPPolWn7w0MV0TrI6B00LsHvtO2dO/tsr729M4/Dxv/7P6/5gAeifg6YoLOqgKQVozlfv/8Spl6+VP/cLqFN+e60S0qQrgPWluweszkFTR3Zuvbn+zKcOsS5y+ukrv+PnC8DKHDRFYVEHTZ25efZr/omXpaVDn39u/eeJbuQCjeJxKuqNfumhi+mcZHUOmvRB/xw0RWFRB036oH8OmqKwqOIWAbrY5uQUv3lesc3rBqtz0KQP+uegKQqLOmjSB/1z0BSFRRW3CNDFNien+M3zim1eN1idgyZ90D8HTVFY1EGTPuifg6YoLKq4RYAutjk5xW+eV2zzusHqHDTpg/45aIrCog6a9EH/HDRFYVHFLQJ0sc3JKX7zvGKb1w1W56BJH/TPQVMUFnXQpA/656ApCosqbhGgi21OTvGb5xXbvG6wOgdN+qB/DpqisKiDJn3QPwdNUVhUcYsAXWxzcorfPK/Y5nWD1Tlo0gf9c9AUhUUdNOmD/jloisKiilsE6GKbk1P85nnFNq8brM5Bkz7on4OmKCzqoEkf9M9BUxQWVdwiQBfbnJziN88rtnndYHUOmvRB/xw0RWFRB036oH8OmqKwqOIWAbrY5uQUv3lesc3rBqtz0KQP+uegKQqLOmjSB/1z0BSFRRW3CNDFNien+M3zim1eN1idgyZ90D8HTVFY1EGTPuifg6YoLKq4RYAutjk5xW+eV2zzusHqHDTpg/45aIrCog6a9EH/HDRFYVHFLQJ0sc3JKX7zvGKb1w1W56BJH/TPQVMUFnXQpA/656ApCosqbhGgi21OTvGb5xXbvG6wOgdN+qB/DpqisKiDJn3QPwdNUVhUcYsAXWxzcorfPK/Y5nWD1Tlo0gf9c9AUhUUdNOmD/jloisKiilsE6GKbk1P85nnFNq8brM5Bkz7on4OmKCzqoEkf9M9BUxQWVdwiQBfbnJziN88rtnndYHUOmvRB/xw0RWFRB036oH8OmqKwqOIWAbrY5uQUv3lesc3rBqtz0KQP+uegKQqLOmjSB/1z0BSFRRW3CNDFNien+M3zim1eN1idgyZ90D8HTVFY1EGTPuifg6YoLKq4RYAutjk5xW+eV2zzusHqHDTpg/45aIrCog6a9EH/HDRFYVHFLQJ0sc3JKX7zvEKg0wvD6sqBfkdh0XKg31FYtBDodIDJrwVWVw70OwqLlgP9jsKihUCnA0x+LbC6cqDfUVi0HOh3FBYtBDodYPJrgdWVA/2OwqLlQL+jsGgh0OmAZF3WMIx5MfkZRjZMfoaRDZOfYWTD5GcY2TD5GUY2TH6GkQ2Tn2Fk4s6d/wd+hY1nfqdh6wAAAABJRU5ErkJggg==" alt="" data-href="" style=""/></p><p>其中电脑1与电脑4之间的消息传递花费的时间最长，为4个单位时间。</p><h2>评测用例规模与约定</h2><p>前30%的评测用例满足：n ≤ 5, m ≤ 5。</p><p>前50%的评测用例满足：n ≤ 20, m ≤ 20。</p><p>前70%的评测用例满足：n ≤ 100, m ≤ 100。</p><p>所有评测用例都满足：1 ≤ n ≤ 10000，1 ≤ m ≤ 10000。</p></div>
+<div class="test-case"><h3>样例 1</h3>
+<p><strong>输入：</strong></p><pre><code>4 2
+1 1 3
+2 1</code></pre>
+<p><strong>输出：</strong></p><pre><code>4</code></pre>
+<h3>样例 2</h3>
+<p><strong>输入：</strong></p><pre><code>4 4
+1 2 2
+3 4 4 4</code></pre>
+<p><strong>输出：</strong></p><pre><code>4</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 5 题：最小花费（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2>问题描述</h2><p>C国共有n个城市。有n-1条双向道路，每条道路连接两个城市，任意两个城市之间能互相到达。小R来到C国旅行，他共规划了m条旅行的路线，第i条旅行路线的起点是si，终点是ti。在旅行过程中，小R每行走一单位长度的路需要吃一单位的食物。C国的食物只能在各个城市中买到，而且不同城市的食物价格可能不同。</p><p>然而，小R不希望在旅行中为了购买较低价的粮食而绕远路，因此他总会选择最近的路走。现在，请你计算小R规划的每条旅行路线的最小花费是多少。</p><h2>输入格式</h2><p>第一行包含2个整数n和m。</p><p>第二行包含n个整数。第i个整数wi表示城市i的食物价格。</p><p>接下来n-1行，每行包括3个整数u, v, e，表示城市u和城市v之间有一条长为e的双向道路。</p><p>接下来m行，每行包含2个整数si和ti，分别表示一条旅行路线的起点和终点。</p><h2>输出格式</h2><p>输出m行，分别代表每一条旅行方案的最小花费。</p><h2>样例说明</h2><p>对于第一条路线，小R会经过2-&gt;1-&gt;3-&gt;5。其中在城市2处以7的价格购买4单位粮食，到城市1时全部吃完，并用1的价格购买7单位粮食，然后到达终点。</p><h2>评测用例规模与约定</h2><p>前10%的评测用例满足：n, m ≤ 20, wi ≤ 20；</p><p>前30%的评测用例满足：n, m ≤ 200；</p><p>另有40%的评测用例满足：一个城市至多与其它两个城市相连。</p><p> 所有评测用例都满足：1 ≤ n, m ≤ 10<sup>5</sup>，1 ≤ wi ≤ 10<sup>6</sup>，1 ≤ e ≤ 10<sup>4</sup>;</p></div>
+<div class="test-case"><p><strong>输入：</strong></p><pre><code>6 4
+1 7 3 2 5 6
+1 2 4
+1 3 5
+2 4 1
+3 5 2
+3 6 1
+2 5
+4 6 
+6 4
+5 6</code></pre>
+<p><strong>输出：</strong></p><pre><code>35
+16
+26
+13</code></pre></div>
+</div>
+<hr>
+</div>
+</body>
+</html>

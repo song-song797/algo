@@ -1,0 +1,137 @@
+/*
+ * 水印检查 (watermark)
+ * CCF CSP 第39次认证 真题2
+ * 时间限制: 1.0秒  内存限制: 512 MiB
+ *
+ * 题目描述：
+ * 给定一个n×n大小的灰度图像A，像素灰度值范围为[0, L-1]。
+ * 需要找出所有能检测出水印CSP的阈值k。
+ * 选定阈值k后将图像二值化：灰度值≥k变为白色，<k变为黑色。
+ * 然后检查图像中是否有5×9的区域呈现出CSP三个字母的形状。
+ *
+ * 输入格式：
+ * 第一行包含两个正整数n和L，表示图像大小和像素灰度值范围。
+ * 接下来n行输入矩阵A，第i行包含n个整数。
+ *
+ * 输出格式：
+ * 输出若干行，每行一个整数，表示可以检查出水印CSP的阈值k。
+ * [0, L-1]范围内所有可行阈值k按从小到大顺序输出。
+ *
+ * 样例输入：
+ * 9 256
+ * 9 9 8 8 9 9 9 8 255
+ * 9 0 0 8 0 0 7 0 8
+ * 9 0 0 8 7 9 7 7 5
+ * 9 0 0 0 0 8 7 0 0
+ * 7 7 8 7 7 8 8 6 5
+ * 6 2 2 5 1 1 5 1 6
+ * 6 2 2 6 6 6 7 5 3
+ * 6 2 2 2 1 5 8 1 1
+ * 7 7 8 7 7 8 8 2 3
+ *
+ * 样例输出：
+ * 4
+ * 5
+ * 7
+ *
+ * 数据范围：
+ * 80%的测试点满足：n ≤ 50、L = 256；
+ * 全部的测试点满足：9 ≤ n ≤ 200、L ∈ {256, 65536}，
+ * 保证至少存在一个阈值可以检测出水印CSP。
+ */
+
+#include <bits/stdc++.h>
+
+using namespace std;
+/*int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int n, L;
+    cin >> n >> L;
+    vector<vector<int>> graph(n + 1, vector<int>(n + 1, -1));
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            cin >> graph[i][j];
+        }
+    }
+    const string model[5] = {"#########", "#--#--#-#", "#--#####-", "#----##--",
+                             "#######--"};
+    set<int> k_set;
+    for (int i = 1; i <= n - 4; i++) {
+        for (int j = 1; j <= n - 8; j++) {
+            int max_black = -1;
+            int min_white = 65536;
+            for (int di = 0; di < 5; di++) {
+                for (int dj = 0; dj < 9; dj++) {
+                    if (model[di][dj] == '#') {
+                        min_white = min(min_white, graph[i + di][j + dj]);
+                    } else {
+                        max_black = max(max_black, graph[i + di][j + dj]);
+                    }
+                }
+            }
+            for (int min_k = max_black + 1; min_k <= min_white; min_k++) {
+                k_set.insert(min_k);
+            }
+        }
+    }
+    for (int k : k_set) {
+        cout << k << '\n';
+    }
+    return 0;
+}
+*/
+
+const string CSP[5] = {
+    "*********",
+    "*--*--*-*",
+    "*--*****-",
+    "*----**--",
+    "*******--"};
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int n, L;
+    cin >> n >> L;
+    vector<bool> visited(L, false);
+    vector<int> ans;
+    vector<vector<int>> image(n, vector<int>(n, 0));
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            cin >> image[i][j];
+        }
+    }
+
+    for (int row = 0; row + 5 <= n; row++) {
+        for (int col = 0; col + 9 <= n; col++) {
+            int max_val = 0;
+            int min_val = 1e9;
+            bool valid = false;
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j < 9; j++) {
+                    if (CSP[i][j] == '*') {
+                        min_val = min(min_val, image[row + i][col + j]);
+                    } else {
+                        max_val = max(max_val, image[row + i][col + j]);
+                    }
+                    if (min_val <= max_val) {
+                        valid = true;
+                        break;
+                    }
+                }
+                if (valid)
+                    break;
+            }
+            for (int k = max_val + 1; k <= min_val; k++) {
+                if (!visited[k]) {
+                    visited[k] = true;
+                    ans.push_back(k);
+                }
+            }
+        }
+    }
+    sort(ans.begin(), ans.end());
+    for (int i = 0; i < ans.size(); i++) {
+        cout << ans[i] << '\n';
+    }
+}
