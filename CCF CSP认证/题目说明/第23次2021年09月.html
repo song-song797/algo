@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第23次2021年09月</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+    line-height: 1.8; color: #1a1a2e; background: #f0f2f5;
+    padding: 20px;
+}
+.container {
+    max-width: 900px; margin: 0 auto;
+    background: #fff; border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 40px 50px;
+}
+h1 {
+    font-size: 28px; color: #16213e; border-bottom: 3px solid #0f3460;
+    padding-bottom: 12px; margin-bottom: 20px;
+}
+h2 {
+    font-size: 20px; color: #0f3460; margin-top: 28px; margin-bottom: 12px;
+    padding-bottom: 6px; border-bottom: 2px solid #e0e6ed;
+}
+h3 { font-size: 17px; color: #16213e; margin-top: 18px; margin-bottom: 8px; }
+p { margin: 10px 0; text-align: justify; }
+ul, ol { margin: 10px 0 10px 24px; }
+li { margin: 4px 0; }
+strong { color: #0f3460; }
+code {
+    background: #f0f4f8; padding: 2px 6px; border-radius: 4px;
+    font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace;
+    font-size: 0.9em; color: #e94560;
+}
+pre {
+    background: #1a1a2e; color: #e0e0e0; padding: 16px 20px;
+    border-radius: 8px; overflow-x: auto; margin: 14px 0;
+    font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace;
+    font-size: 14px; line-height: 1.6; white-space: pre-wrap;
+}
+pre code { background: none; color: inherit; padding: 0; font-size: inherit; }
+table {
+    width: auto; border-collapse: collapse; margin: 14px 0;
+    font-size: 14px;
+}
+th, td {
+    border: 1px solid #d1d9e6; padding: 8px 12px; text-align: left;
+}
+th { background: #f0f4f8; font-weight: 600; color: #0f3460; }
+tr:nth-child(even) { background: #fafbfc; }
+hr { border: none; border-top: 1px solid #e0e6ed; margin: 30px 0; }
+img { max-width: 100%; height: auto; border-radius: 6px; margin: 10px 0; display: block; }
+.meta { color: #6c757d; font-size: 15px; }
+.meta li { list-style: none; }
+.meta ul { margin-left: 0; padding-left: 0; }
+.problem { margin-bottom: 30px; }
+.problem-header {
+    font-size: 20px; color: #0f3460; margin-top: 28px; margin-bottom: 12px;
+    padding-bottom: 6px; border-bottom: 2px solid #e0e6ed;
+}
+.limits { color: #555; font-size: 14px; margin-bottom: 12px; }
+.test-case { margin: 10px 0; }
+.test-case pre { background: #263238; }
+/* 原始HTML中的样式兼容 */
+span[style] { /* 保留原始 inline style */ }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>第23次2021年09月</h1>
+<div class="meta"><ul>
+<li><strong>考试时长</strong>：240 分钟</li>
+<li><strong>总分</strong>：500 分</li>
+<li><strong>题目数量</strong>：5 题</li>
+<li><strong>编程语言</strong>：C/C++</li>
+</ul></div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 1 题：数组推导（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;">A1,A2,⋯,An 是一个由 n 个<strong>自然数</strong>（即非负整数）组成的数组。 在此基础上，我们用数组 B1⋯Bn 表示 A 的前缀最大值。</p><p style="text-align: left;">Bi=max⁡A1,A2,⋯,Ai</p><p style="text-align: left;">如上所示，Bi 定义为数组 A 中前 i 个数的最大值。 根据该定义易知 A1=B1，且随着 i 的增大，Bi 单调不降。 此外，我们用 sum=A1+A2+⋯+An 表示数组 A 中 n 个数的总和。</p><p style="text-align: left;">现已知数组 B，我们想要根据 B 的值来反推数组 A。 显然，对于给定的 B，A 的取值可能并不唯一。 试计算，在数组 A 所有可能的取值情况中，sum 的最大值和最小值分别是多少？</p><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">输入的第一行包含一个正整数 n。</p><p style="text-align: left;">输入的第二行包含 n 个用空格分隔的自然数 B1,B2,⋯,Bn。</p><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">输出共两行。</p><p style="text-align: left;">第一行输出一个整数，表示 sum 的最大值。</p><p style="text-align: left;">第二行输出一个整数，表示 sum 的最小值。</p><h2 style="text-align: left;">样例1解释</h2><p style="text-align: left;">数组 A 的可能取值包括但不限于以下三种情况。</p><p style="text-align: left;">情况一：A=[0,0,5,5,10,10]</p><p style="text-align: left;">情况二：A=[0,0,5,3,10,4]</p><p style="text-align: left;">情况三：A=[0,0,5,0,10,0]</p><p style="text-align: left;">其中第一种情况 sum=30 为最大值，第三种情况 sum=15 为最小值。</p><h2 style="text-align: left;">样例2解释</h2><p style="text-align: left;">A=[10,20,30,40,50,60,75] 是唯一可能的取值，所以 sum 的最大、最小值均为 285。</p><h2 style="text-align: left;">子任务</h2><p style="text-align: left;">50% 的测试数据满足数组 B 单调递增，即 0&lt;B1&lt;B2&lt;⋯&lt;Bn&lt;10<sup>5</sup>；</p><p style="text-align: left;">全部的测试数据满足 n≤100 且数组 B 单调不降，即 0≤B1≤B2≤⋯≤Bn≤10<sup>5</sup>。</p></div>
+<div class="test-case"><h3>样例 1</h3>
+<p><strong>输入：</strong></p><pre><code>6
+0 0 5 5 10 10</code></pre>
+<p><strong>输出：</strong></p><pre><code>30
+15</code></pre>
+<h3>样例 2</h3>
+<p><strong>输入：</strong></p><pre><code>7
+10 20 30 40 50 60 75</code></pre>
+<p><strong>输出：</strong></p><pre><code>285
+285</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 2 题：非零段划分（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;">A1,A2,⋯,An 是一个由 n 个自然数（非负整数）组成的数组。 我们称其中 Ai,⋯,Aj 是一个非零段，当且仅当以下条件同时满足：</p><ul><li style="text-align: left;">1≤i≤j≤n；</li><li style="text-align: left;">对于任意的整数 k，若 i≤k≤j，则 Ak&gt;0；</li><li style="text-align: left;">i=1 或 A<sub>i−1</sub>=0；</li><li style="text-align: left;">j=n 或 A<sub>j+1</sub>=0。</li></ul><p style="text-align: left;">下面展示了几个简单的例子：</p><ul><li style="text-align: left;">A=[3,1,2,0,0,2,0,4,5,0,2] 中的 4 个非零段依次为 [3,1,2]、[2]、[4,5] 和 [2]；</li><li style="text-align: left;">A=[2,3,1,4,5] 仅有 1 个非零段；</li><li style="text-align: left;">A=[0,0,0] 则不含非零段（即非零段个数为 0）。</li></ul><p style="text-align: left;">现在我们可以对数组 A 进行如下操作：任选一个正整数 p，然后将 A 中所有小于 p 的数都变为 0。 试选取一个合适的 p，使得数组 A 中的非零段个数达到最大。 若输入的 A 所含非零段数已达最大值，可取 p=1，即不对 A 做任何修改。</p><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">输入的第一行包含一个正整数 n。</p><p style="text-align: left;">输入的第二行包含 n 个用空格分隔的自然数 A1,A2,⋯,An。</p><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">仅输出一个整数，表示对数组 A 进行操作后，其非零段个数能达到的最大值。</p><h2 style="text-align: left;">样例1解释</h2><p style="text-align: left;">p=2 时，A=[3,0,2,0,0,2,0,4,5,0,2]，5 个非零段依次为 [3]、[2]、[2]、[4,5] 和 [2]；此时非零段个数达到最大。</p><h2 style="text-align: left;">样例2解释</h2><p style="text-align: left;">p=12 时，A=[0,0,20,0,0,0,0,15,0,20,0,0,0,15]，4 个非零段依次为 [20]、[15]、[20] 和 [15]；此时非零段个数达到最大。</p><h2 style="text-align: left;">样例3解释</h2><p style="text-align: left;">p=1 时，A=[1,0,0]，此时仅有 1 个非零段 [1]，非零段个数达到最大。</p><h2 style="text-align: left;">样例4解释</h2><p style="text-align: left;">无论 p 取何值，A 都不含有非零段，故非零段个数至多为 0。</p><h2 style="text-align: left;">子任务</h2><p style="text-align: left;">70% 的测试数据满足 n≤1000；</p><p style="text-align: left;">全部的测试数据满足 n≤5×10<sup>5</sup>，且数组 A 中的每一个数均不超过 10<sup>4</sup>。</p></div>
+<div class="test-case"><h3>样例 1</h3>
+<p><strong>输入：</strong></p><pre><code>11
+3 1 2 0 0 2 0 4 5 0 2</code></pre>
+<p><strong>输出：</strong></p><pre><code>5</code></pre>
+<h3>样例 2</h3>
+<p><strong>输入：</strong></p><pre><code>14
+5 1 20 10 10 10 10 15 10 20 1 5 10 15</code></pre>
+<p><strong>输出：</strong></p><pre><code>4</code></pre>
+<h3>样例 3</h3>
+<p><strong>输入：</strong></p><pre><code>3
+1 0 0</code></pre>
+<p><strong>输出：</strong></p><pre><code>1</code></pre>
+<h3>样例 4</h3>
+<p><strong>输入：</strong></p><pre><code>3
+0 0 0</code></pre>
+<p><strong>输出：</strong></p><pre><code>0</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 3 题：脉冲神经网络（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目背景</h2><p style="text-align: left;">在本题中，你需要实现一个 SNN（spiking neural network，脉冲神经网络）的模拟器。一个 SNN 由以下几部分组成：</p><ol><li style="text-align: left;">神经元：按照一定的公式更新内部状态，接受脉冲并可以发放脉冲</li><li style="text-align: left;">脉冲源：在特定的时间发放脉冲</li><li style="text-align: left;">突触：连接神经元-神经元或者脉冲源-神经元，负责传递脉冲</li></ol><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;">神经元会按照一定的规则更新自己的内部状态。本题中，我们对时间进行离散化处理，即设置一个时间间隔 Δt，仅考虑时间间隔整数倍的时刻 <span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="t=k\Delta{t}(k \in Z^+)"></span>，按照下面的公式，从 k−1 时刻的取值计算 k 时刻的变量的取值：</p><p style="text-align: left;"><span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="v_k=v_{k-1} + \Delta{t}(0.04v_{k-1}^2 + 5v_{k-1} + 140 - u_{k-1}) + I_k"></span></p><p style="text-align: left;"><span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="u_k=u_{k-1} + \Delta{t}a(bv_{k-1} - u_{k-1})"></span></p><p style="text-align: left;">其中 v 和 u 是神经元内部的变量，会随着时间而变化，a 和 b 是常量，不会随着时间变化；其中 Ik 表示该神经元在 k 时刻接受到的所有脉冲输入的强度之和，如果没有接受到脉冲，那么 Ik=0。当进行上面的计算后，如果满足 vk≥30，神经元会发放一个脉冲，脉冲经过突触传播到其他神经元；同时，vk 设为 c 并且 uk 设为 uk+d，其中 c 和 d 也是常量。图 1 展示了一个神经元 v 变量随时间变化的曲线。</p><p style="text-align: left;"><img src="data:image/png;base64,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" alt="上传的图片" data-href="data:image/png;base64,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" style=""></p><p style="text-align: left;">突触表示的是神经元-神经元、脉冲源-神经元的连接关系，包含一个入结点和一个出结点（可能出现自环和重边）。当突触的入结点（神经元或者脉冲源）在 k 时刻发放一个脉冲，那么在传播延迟 D(D&gt;0) 个时刻以后，也就是在 k+D 时刻突触的出结点（神经元）会接受到一个强度为 w 的脉冲。</p><p style="text-align: left;">脉冲源在每个时刻以一定的概率发放一个脉冲，为了模拟这个过程，每个脉冲源有一个参数 0&lt;r≤32,767，并统一采用以下的伪随机函数：</p><p style="text-align: left;">C++ 版本：</p><pre><code class="language-cpp">static unsigned long next = 1;
+
+/* RAND_MAX assumed to be 32767 */
+int myrand(void) {
+    next = next * 1103515245 + 12345;
+    return((unsigned)(next/65536) % 32768);
+}</code></pre><p style="text-align: left;">Python 版本：</p><pre><code class="language-python">next = 1
+def myrand():
+    global next
+    next = (next * 1103515245 + 12345) % (2 ** 64)
+    return (next // 65536) % 32768</code></pre><p style="text-align: left;">Java 版本：</p><pre><code class="language-java">long next = 1;
+int myrand() {
+    next = next * 1103515245 + 12345;
+    return (int)((Long.divideUnsigned(next, 65536)) % 32768);
+}</code></pre><p style="text-align: left;">在每个时间刻，按照编号顺序从小到大，每个脉冲源调用一次上述的伪随机函数，当 r&gt;myrand() 时，在当前时间刻发放一次脉冲，并通过突触传播到神经元。</p><p style="text-align: left;">进行仿真的时候，已知 0 时间刻各个神经元的状态，从 1 时间刻开始按照上述规则进行计算，直到完成 T 时刻的计算，再输出 T 时刻神经元的 v 值和发放的脉冲次数分别的最小值和最大值。</p><p style="text-align: left;">规定输入数据中结点按如下方式顺序编号：[0,N−1] 为神经元的编号，[N,N+P−1] 为脉冲源的编号。</p><p style="text-align: left;">代码中请使用双精度浮点类型。</p><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">输入的第一行包括四个以空格分隔的正整数 N S P T，表示一共有 N 个神经元，S 个突触和 P 个脉冲源，输出时间刻 T 时神经元的 v 值。</p><p style="text-align: left;">输入的第二行是一个正实数 Δt，表示时间间隔。</p><p style="text-align: left;">输入接下来的若干行，每行有以空格分隔的一个正整数 RN 和六个实数 v u a b c d，按顺序每一行对应 R<sub>N </sub>个具有相同初始状态和常量的神经元：其中 v u 表示神经元在时刻 0 时的变量取值；a b c d 为该神经元微分方程里的四个常量。保证所有的 RN 加起来等于 N。它们从前向后按编号顺序描述神经元，每行对应一段连续编号的神经元的信息。</p><p style="text-align: left;">输入接下来的 P 行，每行是一个正整数 r，按顺序每一行对应一个脉冲源的 r 参数。</p><p style="text-align: left;">输入接下来的 S 行，每行有以空格分隔的两个整数 s(0≤s&lt;N+P)、t(0≤t&lt;N) 、一个实数 w(w≥0) 和一个正整数 D，其中 s 和 t 分别是入结点和出结点的编号；w 和 D 分别表示脉冲强度和传播延迟。</p><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">输出共有两行，第一行由两个近似保留 3 位小数的实数组成，分别是所有神经元在时刻 T 时变量 v 的取值的最小值和最大值。第二行由两个整数组成，分别是所有神经元在整个模拟过程中发放脉冲次数的最小值和最大值。</p><p style="text-align: left;">只要按照题目要求正确实现就能通过，不会因为计算精度的问题而得到错误答案。</p><h2 style="text-align: left;">样例1解释</h2><p style="text-align: left;">该样例有 1 个神经元、1 个突触和 1 个脉冲源，时间间隔 Δt=0.1。唯一的脉冲源通过脉冲强度为 30.0、传播延迟为 2 的突触传播到唯一的神经元。</p><p style="text-align: left;">该样例一共进行 10 个时间步的模拟，随机数生成器生成 10 次随机数如下：</p><pre><code class="language-none">16838
+5758
+10113
+17515
+31051
+5627
+23010
+7419
+16212
+4086</code></pre><p style="text-align: left;">因此唯一的脉冲源在时刻 1-4 和 6-10 发放脉冲。在时间刻从 1 到 10 时，唯一的神经元的 v 取值分别为：</p><pre><code class="language-none">-70.000
+-70.000
+-40.000
+-8.200
+-65.000
+-35.404
+-32.895
+0.181
+-65.000
+-35.608</code></pre><p style="text-align: left;">该神经元在时刻 5 和时刻 9 发放，最终得到的 v=−35.608 。</p><h2 style="text-align: left;">子任务</h2><table style="width: auto;"><tbody><tr><th colSpan="1" rowSpan="1" width="auto">子任务</th><th colSpan="1" rowSpan="1" width="auto">T</th><th colSpan="1" rowSpan="1" width="auto">N</th><th colSpan="1" rowSpan="1" width="auto">S</th><th colSpan="1" rowSpan="1" width="auto">P</th><th colSpan="1" rowSpan="1" width="auto">D</th><th colSpan="1" rowSpan="1" width="auto">分值</th></tr><tr><td colSpan="1" rowSpan="1" width="auto">1</td><td colSpan="1" rowSpan="1" width="auto">≤10<sup>2</sup></td><td colSpan="1" rowSpan="1" width="auto">≤10<sup>2</sup></td><td colSpan="1" rowSpan="1" width="auto">≤10<sup>2</sup></td><td colSpan="1" rowSpan="1" width="auto">≤10<sup>2</sup></td><td colSpan="1" rowSpan="1" width="auto">≤10<sup>2</sup></td><td colSpan="1" rowSpan="1" width="auto">30</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">2</td><td colSpan="1" rowSpan="1" width="auto">≤10<sup>3</sup></td><td colSpan="1" rowSpan="2" width="auto">≤10<sup>3</sup></td><td colSpan="1" rowSpan="2" width="auto">≤10<sup>3</sup></td><td colSpan="1" rowSpan="2" width="auto">≤10<sup>3</sup></td><td colSpan="1" rowSpan="1" width="auto">≤10<sup>3</sup></td><td colSpan="1" rowSpan="1" width="auto">40</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">3</td><td colSpan="1" rowSpan="1" width="auto">≤10<sup>5</sup></td><td colSpan="1" rowSpan="1" width="auto">≤10</td><td colSpan="1" rowSpan="1" width="auto">30</td></tr></tbody></table><p><br></p></div>
+<div class="test-case"><h3>样例 1</h3>
+<p><strong>输入：</strong></p><pre><code>1 1 1 10
+0.1
+1 -70.0 -14.0 0.02 0.2 -65.0 2.0
+30000
+1 0 30.0 2</code></pre>
+<p><strong>输出：</strong></p><pre><code>-35.608 -35.608
+2 2</code></pre>
+<h3>样例 2</h3>
+<p><strong>输入：</strong></p><pre><code>2 4 2 10
+0.1
+1 -70.0 -14.0 0.02 0.2 -65.0 2.0
+1 -69.0 -13.0 0.04 0.1 -60.0 1.0
+30000
+20000
+2 0 15.0 1
+3 1 20.0 1
+1 0 10.0 2
+0 1 40.0 3</code></pre>
+<p><strong>输出：</strong></p><pre><code>-60.000 -22.092
+1 2</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 4 题：收集卡牌（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;">小林在玩一个抽卡游戏，其中有 n 种不同的卡牌，编号为 1 到 n。每一次抽卡，她获得第 i 种卡牌的概率为 pi。如果这张卡牌之前已经获得过了，就会转化为一枚硬币。可以用 k 枚硬币交换一张没有获得过的卡。</p><p style="text-align: left;">小林会一直抽卡，直至集齐了所有种类的卡牌为止，求她的期望抽卡次数。如果你给出的答案与标准答案的绝对误差不超过 10<sup>−4</sup>，则视为正确。</p><p style="text-align: left;">提示：聪明的小林会把硬币攒在手里，等到通过兑换就可以获得剩余所有卡牌时，一次性兑换并停止抽卡。</p><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">输入共两行。第一行包含两个用空格分隔的正整数 n,k，第二行给出 p1,p2,…,pn，用空格分隔。</p><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">输出共一行，一个实数，即期望抽卡次数。</p><h2 style="text-align: left;">样例1解释</h2><p style="text-align: left;">共有 2 种卡牌，不妨记为 A 和 B，获得概率分别为 0.4 和 0.6，2 枚硬币可以换一张卡牌。下面给出各种可能出现的情况：</p><ul><li style="text-align: left;">第一次抽卡获得 A，第二次抽卡获得 B，抽卡结束，概率为 0.4×0.6=0.24，抽卡次数为 2。</li><li style="text-align: left;">第一次抽卡获得 A，第二次抽卡获得 A，第三次抽卡获得 B，抽卡结束，概率为 0.4×0.4×0.6=0.096，抽卡次数为 3。</li><li style="text-align: left;">第一次抽卡获得 A，第二次抽卡获得 A，第三次抽卡获得 A，用硬币兑换 B，抽卡结束，概率为 0.4×0.4×0.4=0.064，抽卡次数为 3。</li><li style="text-align: left;">第一次抽卡获得 B，第二次抽卡获得 A，抽卡结束，概率为 0.6×0.4=0.24，抽卡次数为 2。</li><li style="text-align: left;">第一次抽卡获得 B，第二次抽卡获得 B，第三次抽卡获得 A，抽卡结束，概率为 0.6×0.6×0.4=0.144，抽卡次数为 3。</li><li style="text-align: left;">第一次抽卡获得 B，第二次抽卡获得 B，第三次抽卡获得 B，用硬币兑换 A，抽卡结束，概率为 0.6×0.6×0.6=0.216，抽卡次数为 3。</li></ul><p style="text-align: left;">因此答案是 0.24×2+0.096×3+0.064×3+0.24×2+0.144×3+0.216×3=2.52。</p><h2 style="text-align: left;">子任务</h2><p style="text-align: left;">对于 20% 的数据，保证 1≤n,k≤5。</p><p style="text-align: left;">对于另外 20% 的数据，保证所有 pi 是相等的。</p><p style="text-align: left;">对于 100% 的数据，保证 1≤n≤16,1≤k≤5，所有的 pi 满足 <span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="p_i \geq \frac{1}{10000}"></span>，且<span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="\sum_{i=1}^{n} p_i=1"></span>。</p></div>
+<div class="test-case"><h3>样例 1</h3>
+<p><strong>输入：</strong></p><pre><code>2 2
+0.4 0.6</code></pre>
+<p><strong>输出：</strong></p><pre><code>2.52</code></pre>
+<h3>样例 2</h3>
+<p><strong>输入：</strong></p><pre><code>4 3
+0.006 0.1 0.2 0.694</code></pre>
+<p><strong>输出：</strong></p><pre><code>7.3229920752</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 5 题：箱根山岳险天下（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目背景</h2><blockquote style="text-align: left;">“你知道对长跑选手来说，最棒的赞美是什么吗？”“是‘快’吗？”“不，是‘强’，”清濑说，“光跑得快，是没办法在长跑中脱颖而出的。天候、场地、比赛的发展、体能，还有自己的精神状态——长跑选手必须冷静分析这许多要素，即使面对再大的困难，也要坚忍不拔地突破难关。长跑选手需要的，是真正的‘强’。所以我们必须把‘强’当作最高的荣誉，每天不断跑下去。”不论阿走或其他房客，全都全神贯注地聆听清濑的话。“看了你这三个月来的表现，我越来越相信自己没看错人，”清濑接着说，“你很有天分，也很有潜力。所以呢，阿走，你一定要更相信自己，不要急着想一飞冲天。变强需要时间，也可以说它永远没有终点。长跑是值得一生投入的竞赛，有些人即使老了，仍然没有放弃慢跑或马拉松运动。”——三浦紫苑《强风吹拂》</blockquote><p style="text-align: left;">箱根驿传（正式名称为东京箱根间往复大学驿传竞走）是日本一项在每年 1 月 2-3 日举行的驿站接力赛，由关东学生田径联盟主办，关东的每所高校都有机会参加。 在日本，箱根驿传是新年假期必看的比赛，许多家庭会一边吃年糕汤一边欣赏激烈的比赛。</p><p style="text-align: left;">今年，京都大学也想派出长跑队参加箱根驿传，田径部的长跑教练组织起一批预备役运动员，并开展了严苛的训练。</p><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;">京都大学的训练一共会持续 m 天，在训练过程中正式队员的名单可能发生变化。 简单起见，我们约定在且仅在第 t(1≤t≤m) 天结束时，会有以下三种事件之一发生：</p><ol><li style="text-align: left;">有一个学生跑 10km 的速度达到了正式队员要求，教练将其作为最后一名纳入正式队员的名单中，这个学生的强度为 x；或者速度排名在最后一位的正式队员，由于速度过慢，而被从正式队员的名单中淘汰。</li><li style="text-align: left;">由于近日的训练，第 s 天结束时速度排名为 l 至 r 的选手的强度有了变化，变为此前的 y 倍。</li><li style="text-align: left;">教练在深夜想知道近日训练的效果，于是他统计了第 s 天结束时速度排名为 l 至 r 的选手目前（即第 t 天结束时）强度的和。由于这个结果可能很大，方便起见我们只考虑其模 p 的值。</li></ol><p style="text-align: left;">出于学生们的隐私考虑，事件日志有可能会被加密。</p><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">第一行为三个用空格隔开的整数 m，p 和 T。</p><p style="text-align: left;">如果 T=0，事件 1 中 x=x′，事件 2 中 y=y′； 如果 T=1，表示事件日志被加密了，事件 1 中 x=x′⊕A，事件 2 中 y=y′⊕A，其中 ⊕ 为按位异或运算，A 为此前最后一次事件 3 所统计出的结果。 如果此前没有事件 3 发生，则 A=0。</p><p style="text-align: left;">接下来 m 行，第 t 行表示在第 t 天结束时发生的事件：</p><ul><li style="text-align: left;">1;x′：表示事件 1 发生。若 x&gt;0，表示有一个强度为 x 的学生作为最后一名纳入正式队员的名单；若 x=0，表示排名在最后的正式队员被从名单中淘汰。保证有 0≤x′&lt;2<sup>30</sup>。</li><li style="text-align: left;">2;s;l;r;y′：表示事件 2 发生。保证有 1≤s≤t，1≤l≤r≤n，0≤y′&lt;2<sup>30</sup>，其中 n 为在第 s 天结束时正式队员的人数。</li><li style="text-align: left;">3;s;l;r：表示事件 3 发生。保证有 1≤s≤t，1≤l≤r≤n，其中 n 为在第 s 天结束时正式队员的人数。</li></ul><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">对于每一个事件 3，输出一行一个数字，为其所统计出的结果。</p><h2 style="text-align: left;">样例1解释</h2><p style="text-align: left;">第 1 天结束时，有一个强度为 7 的学生被列为正式队员，我们不妨称他为小津。此时正式队员名单依次为：小津。</p><p style="text-align: left;">第 2 天结束时，有一个强度为 3 的学生被列为正式队员，我们不妨称他为城崎。此时正式队员名单依次为：小津、城崎。</p><p style="text-align: left;">第 3 天结束时，城崎被淘汰了。此时正式队员名单为：小津。</p><p style="text-align: left;">第 4 天结束时，有一个强度为 4 的学生被列为正式队员，我们不妨称他为樋口清太郎。此时正式队员名单依次为：小津、樋口清太郎。</p><p style="text-align: left;">第 5 天结束时，由于近日的训练，第 4 天正式队员名单中第 1 至 2 个人——即小津和樋口清太郎——的强度乘了 2，所以，小津的强度达到了 14，樋口清太郎的强度达到了 8。</p><p style="text-align: left;">第 6 天结束时，教练统计了第 2 天正式队员名单中第 1 至 2 个人——即小津和城崎——当前的强度，小津的强度为 14，城崎的强度为 3，故统计结果为 17，模 p 的值为 7。</p><p style="text-align: left;">第 7 天结束时，由于近日的训练，第 1 天正式队员名单中的第 1 个人——即小津——的强度乘了 3，所以，小津的强度达到了 42。</p><p style="text-align: left;">第 8 天结束时，教练统计了第 6 天正式队员名单中第 1 至 2 个人——即小津和樋口清太郎——当前的强度，小津的强度为 42，樋口清太郎的强度为 8，故统计结果为 50，模 p 的值为 0。</p><h2 style="text-align: left;">子任务</h2><p style="text-align: left;">1≤m≤3×10<sup>5</sup>,2≤p&lt;2<sup>30</sup>,T∈0,1</p><table style="width: auto;"><tbody><tr><th colSpan="1" rowSpan="1" width="auto">测试点</th><th colSpan="1" rowSpan="1" width="auto">特殊性质</th><th colSpan="1" rowSpan="1" width="auto">T</th></tr><tr><td colSpan="1" rowSpan="1" width="auto">1</td><td colSpan="1" rowSpan="1" width="auto">m≤5000</td><td colSpan="1" rowSpan="3" width="auto">1</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">2</td><td colSpan="1" rowSpan="1" width="auto">事件 1 中 x&gt;0</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">3</td><td colSpan="1" rowSpan="1" width="auto">没有事件 2</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">4</td><td colSpan="1" rowSpan="1" width="auto">事件 1 中 x 在 {0,1} 中随机选取</td><td colSpan="1" rowSpan="2" width="auto">0</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">5</td><td colSpan="1" rowSpan="2" width="auto">r−l≤10</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">6</td><td colSpan="1" rowSpan="1" width="auto">1</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">7, 8</td><td colSpan="1" rowSpan="2" width="auto">无</td><td colSpan="1" rowSpan="1" width="auto">0</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">9, 10</td><td colSpan="1" rowSpan="1" width="auto">1</td></tr></tbody></table><p style="text-align: left;">每个测试点占 10 分。</p></div>
+<div class="test-case"><h3>样例 1</h3>
+<p><strong>输入：</strong></p><pre><code>8 10 0
+1 7
+1 3
+1 0
+1 4
+2 4 1 2 2
+3 2 1 2
+2 1 1 1 3
+3 6 1 2</code></pre>
+<p><strong>输出：</strong></p><pre><code>7
+0</code></pre>
+<h3>样例 2</h3>
+<p><strong>输入：</strong></p><pre><code>200 307854322 1
+1 304192542
+1 261749745
+1 227234660
+1 258761107
+1 71490397
+1 72584186
+1 172113773
+1 170623186
+1 109308637
+1 108383253
+1 221430535
+1 184520171
+1 12820964
+1 64943840
+1 271383631
+1 103269159
+1 12002213
+1 141551258
+1 200255671
+1 303679342
+1 177153246
+1 242934504
+1 192722694
+1 81041418
+1 129449540
+1 208869479
+1 193883084
+1 47265951
+1 14844237
+1 204331401
+1 120715260
+1 183356222
+1 151061115
+1 97645108
+1 95770509
+1 10891614
+1 136365751
+1 277592250
+1 244161106
+1 74405936
+1 140365146
+1 22587603
+1 172441554
+1 300179553
+1 235367849
+1 75467014
+1 291045594
+1 220071302
+1 26967280
+1 279868778
+1 109902396
+1 286509675
+1 275417760
+1 74253569
+1 57318310
+1 147462465
+1 89999340
+1 17784677
+1 245244350
+1 138709004
+1 214478013
+1 134244031
+1 298548097
+1 17276277
+1 183802269
+1 22366514
+1 275904549
+1 142230969
+1 116156399
+1 63581175
+1 136336228
+1 214860504
+1 72329372
+1 204231581
+1 78276583
+1 277642488
+1 81760292
+1 7831561
+1 134535873
+1 42237141
+1 165620849
+1 286362129
+1 87388726
+1 288617590
+1 97675237
+1 113222505
+1 292912
+1 98092392
+1 257549905
+1 180583994
+1 244157382
+1 117371320
+1 304810612
+1 148813285
+1 150599985
+1 229632823
+1 246806551
+1 297736161
+1 66536628
+1 70165839
+1 31086027
+1 0
+1 46984478
+1 0
+3 13 2 11
+1 134407869
+1 134407869
+2 73 7 31 130418473
+1 134407869
+1 62804642
+1 134407869
+1 134407869
+3 28 12 21
+1 173819539
+3 93 34 83
+3 68 5 38
+1 95422722
+2 85 54 85 89788932
+2 28 2 25 251954506
+1 185543612
+1 34466375
+1 185543612
+2 28 2 13 51844756
+3 43 22 33
+3 97 5 87
+1 53569742
+1 83590412
+1 53569742
+2 1 1 1 131620724
+2 128 5 72 41971821
+1 53569742
+1 197197823
+1 333156690
+3 59 48 50
+1 224641252
+1 24037560
+3 54 26 40
+2 91 7 37 58105019
+2 59 4 50 254285874
+3 112 17 63
+3 103 53 54
+3 3 1 3
+3 4 4 4
+2 121 68 76 258392700
+2 88 55 59 10180251
+2 110 45 76 125533148
+1 160394017
+1 170735200
+3 51 18 34
+3 136 43 64
+1 49346652
+1 114223193
+3 62 17 26
+3 57 8 40
+1 278848254
+1 278848254
+1 411603847
+1 278848254
+1 278848254
+1 278848254
+2 112 70 79 437553006
+2 120 4 89 428224488
+3 53 50 51
+2 109 36 81 205513848
+3 81 31 46
+3 78 45 64
+2 107 19 28 8661353
+3 36 21 33
+2 28 4 28 227981470
+2 42 18 29 7067955
+1 1536382
+1 214941299
+1 176373062
+2 172 26 74 241772251
+1 21368911
+2 61 50 61 37266210
+3 84 30 48
+3 31 8 24
+1 297156062
+1 328205831
+2 175 57 77 408989526
+1 528105214
+2 30 4 24 416690156
+3 9 4 8
+1 31664726
+3 144 40 67
+1 276474902
+2 115 56 72 15951722
+2 187 6 50 38653155
+1 17582098
+1 276474902
+1 415944350
+3 34 1 24
+1 204461450
+2 136 1 59 92444637
+3 79 7 79
+3 22 2 17
+1 284506459
+2 166 78 86 22058413
+1 30931926</code></pre>
+<p><strong>输出：</strong></p><pre><code>134407869
+184056088
+13293385
+185543612
+34566045
+53569742
+224641252
+2971977
+10689074
+196073568
+220349662
+170735200
+273278086
+25664733
+155812556
+278848254
+238098134
+256392602
+172981220
+1536382
+57033232
+297156062
+31664726
+276474902
+204461450
+168966052
+30931926</code></pre></div>
+</div>
+<hr>
+</div>
+</body>
+</html>

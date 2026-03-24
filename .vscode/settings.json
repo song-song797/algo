@@ -1,0 +1,115 @@
+{
+  "explorer.sortOrder": "default",
+  "cmake.cmakePath": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin/cmake",
+  "cmake.useCMakePresets": "always",
+  "cmake.configureOnOpen": false,
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.preferredGenerators": [
+    "Ninja"
+  ],
+  "cmake.buildDirectory": "${workspaceFolder}/.cache/cmake/competitive-cpp-debug",
+  "cmake.configureEnvironment": {
+    "PATH": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin:${env:PATH}"
+  },
+  "cmake.buildEnvironment": {
+    "PATH": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin:${env:PATH}"
+  },
+  "terminal.integrated.env.osx": {
+    "PATH": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin:${env:PATH}"
+  },
+  "clangd.path": "/usr/bin/clangd",
+  "clangd.arguments": [
+    "--compile-commands-dir=${workspaceFolder}/.cache/cmake/competitive-cpp-debug",
+    "--background-index",
+    "--header-insertion=never"
+  ],
+  "files.exclude": {
+    "**/.agent": true,
+    "**/.cache": true,
+    "**/.idea": true,
+    "**/.vs": true
+  },
+  // ═══ 编辑器补全核心开关 ═══
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggest.enabled": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "on",
+  "editor.wordBasedSuggestions": "allDocuments",
+  "editor.hover.enabled": "on",
+  "editor.parameterHints.enabled": true,
+  // ═══ 自动格式化保存模式 ═══
+  "editor.formatOnSaveMode": "file",
+  // ═══ 补全项类型全部启用 ═══
+  "editor.suggest.showMethods": true,
+  "editor.suggest.showFunctions": true,
+  "editor.suggest.showVariables": true,
+  "editor.suggest.showClasses": true,
+  "editor.suggest.showKeywords": true,
+  "editor.suggest.showSnippets": true,
+  "editor.suggest.showValues": true,
+  "editor.suggest.showConstants": true,
+  "editor.suggest.showEnums": true,
+  "editor.suggest.showEnumMembers": true,
+  "editor.suggest.showInterfaces": true,
+  "editor.suggest.showStructs": true,
+  "editor.suggest.showModules": true,
+  "editor.suggest.showProperties": true,
+  "editor.suggest.showEvents": true,
+  "editor.suggest.showOperators": true,
+  "editor.suggest.showUnits": true,
+  "editor.suggest.showReferences": true,
+  "editor.suggest.showTypeParameters": true,
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.files.exclude": {
+    "**/.vs": true,
+    "**/.idea": true,
+    "**/.agent": true,
+    "**/.cache": true,
+    "**/build": true,
+    "**/cmake-build": true,
+    "**/cmake-build-debug": true,
+    "**/out": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.vs/**": true,
+    "**/.idea/**": true,
+    "**/.agent/**": true,
+    "**/.cache/**": true,
+    "**/build/**": true,
+    "**/cmake-build/**": true,
+    "**/cmake-build-debug/**": true,
+    "**/out/**": true
+  },
+  "search.exclude": {
+    "**/.vs": true,
+    "**/.idea": true,
+    "**/.agent": true,
+    "**/.cache": true,
+    "**/build": true,
+    "**/cmake-build": true,
+    "**/cmake-build-debug": true,
+    "**/out": true
+  },
+  // ═══ clang-format for C++ ═══
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  }
+}

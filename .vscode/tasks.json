@@ -1,0 +1,78 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C/C++: Configure Competitive CMake",
+      "type": "process",
+      "command": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin/cmake",
+      "args": [
+        "--preset",
+        "competitive-cpp-debug"
+      ],
+      "options": {
+        "env": {
+          "PATH": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin:${env:PATH}"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "C/C++: Build All Targets",
+      "type": "process",
+      "command": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin/cmake",
+      "args": [
+        "--build",
+        "--preset",
+        "competitive-cpp-debug-all"
+      ],
+      "options": {
+        "env": {
+          "PATH": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin:${env:PATH}"
+        }
+      },
+      "dependsOn": "C/C++: Configure Competitive CMake",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "C/C++: Build Current File",
+      "type": "process",
+      "command": "/bin/bash",
+      "args": [
+        "${workspaceFolder}/scripts/build-current-cpp.sh",
+        "${file}"
+      ],
+      "options": {
+        "env": {
+          "PATH": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin:${env:PATH}"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "C/C++: Run Current File",
+      "type": "process",
+      "command": "${workspaceFolder}/build/bin-single/current-debug-target",
+      "args": [],
+      "dependsOn": "C/C++: Build Current File",
+      "group": "test",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "new"
+      }
+    }
+  ]
+}

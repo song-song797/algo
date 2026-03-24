@@ -1,0 +1,32 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "competitive-cpp-debug",
+      "displayName": "Competitive C++ Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/.cache/cmake/competitive-cpp-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_CXX_COMPILER": "/usr/bin/clang++",
+        "CMAKE_MAKE_PROGRAM": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin/ninja"
+      },
+      "environment": {
+        "PATH": "/Users/Zhuanz/miniconda3/envs/competitive-cpp/bin:$penv{PATH}"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "competitive-cpp-debug-all",
+      "displayName": "Build All Targets (Competitive C++ Debug)",
+      "configurePreset": "competitive-cpp-debug",
+      "jobs": 8
+    }
+  ]
+}

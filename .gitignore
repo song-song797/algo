@@ -1,0 +1,14 @@
+build/
+*.exe
+out/
+build-round-check/
+cmake-build-debug/
+cmake-build/
+.cache/
+*.obj
+*.ilk
+*.pdb
+*.a
+.DS_Store
+.idea/
+.vs/

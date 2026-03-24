@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "macOS Competitive C++",
+      "includePath": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/.competition-compat"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/clang++",
+      "cStandard": "c17",
+      "cppStandard": "gnu++17",
+      "intelliSenseMode": "macos-clang-arm64",
+      "compileCommands": "${workspaceFolder}/.cache/cmake/competitive-cpp-debug/compile_commands.json"
+    }
+  ],
+  "version": 4
+}

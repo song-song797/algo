@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Current CPP",
+      "isDefault": true,
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/bin-single/current-debug-target",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "terminal": "integrated",
+      "presentation": {
+        "group": "default",
+        "order": 1
+      },
+      "preLaunchTask": "C/C++: Build Current File"
+    }
+  ]
+}

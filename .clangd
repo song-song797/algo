@@ -1,0 +1,9 @@
+CompileFlags:
+  CompilationDatabase: .cache/cmake/competitive-cpp-debug
+  Compiler: /usr/bin/clang++
+  Add:
+    - -std=gnu++17
+    - -I./.competition-compat
+
+Diagnostics:
+  UnusedIncludes: None

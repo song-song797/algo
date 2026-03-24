@@ -1,0 +1,8 @@
+﻿-xc++
+-std=gnu++17
+-I./.competition-compat
+-Wall
+-Wextra
+-g
+-finput-charset=UTF-8
+-fexec-charset=UTF-8
