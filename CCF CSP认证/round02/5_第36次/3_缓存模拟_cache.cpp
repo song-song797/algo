@@ -39,9 +39,16 @@
  * 0 34
  */
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-  return 0;
+    int n, m, q;
+    while (q--) {
+        int o, a;
+        cin >> o >> a;
+    }
+    return 0;
 }

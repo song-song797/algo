@@ -1,4 +1,4 @@
-﻿/*
+/*
  * 模板展开 (template)
  * CCF CSP 第37次认证 真题3
  * 时间限制: 1.0秒  内存限制: 512 MiB
@@ -53,9 +53,70 @@
  * 10
  */
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main() {
+#define int long long
+const int MOD = 1000000007;
 
-  return 0;
+unordered_map<string, vector<string>> mp;
+unordered_map<string, int> mi;
+unordered_map<string, int> type_map;
+
+int getValue(string s) {
+    if (s[0] != '$') {
+        return s.size() % MOD;
+    }
+    string var = s.substr(1);
+    if (type_map.find(var) == type_map.end()) {
+        return 0;
+    }
+    if (type_map[var] == 1) {
+        return mi[var];
+    } else {
+        int res = 0;
+        for (auto str : mp[var]) {
+            res = (res + getValue(str)) % MOD;
+        }
+        return res;
+    }
+}
+
+signed main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n;
+    cin >> n;
+    cin.get();
+
+    while (n--) {
+        string line;
+        getline(cin, line);
+        stringstream ss(line);
+        int op;
+        ss >> op;
+        string variable;
+        ss >> variable;
+
+        if (op == 1) {
+            type_map[variable] = 1;
+            int len = 0;
+            string s;
+            while (ss >> s) {
+                len = (len + getValue(s)) % MOD;
+            }
+            mi[variable] = len;
+        } else if (op == 2) {
+            type_map[variable] = 2;
+            mp[variable].clear();
+            string s;
+            while (ss >> s) {
+                mp[variable].push_back(s);
+            }
+        } else if (op == 3) {
+            string s = "$" + variable;
+            cout << getValue(s) << '\n';
+        }
+    }
+    return 0;
 }

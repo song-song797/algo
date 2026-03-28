@@ -29,9 +29,23 @@
  * 3
  */
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+const int MOD = 1e9 + 7;
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-  return 0;
+    int n, m;
+    cin >> n >> m;
+    cin >> ws;
+    vector<string> f;
+    string line;
+    getline(cin, line);
+    stringstream ss(line);
+    string str;
+    while(ss>>str){
+        f.push_back(str);
+    } 
+    return 0;
 }

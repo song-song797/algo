@@ -36,9 +36,94 @@
  * Y
  */
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main() {
+void solve() {
+    int m;
+    cin >> m;
+    unordered_map<string, vector<double>> mp;
+    for (int i = 0; i < m; i++) {
+        string s;
+        cin >> s;
+        string current_element = "";
+        string current_num = "";
+        for (int j = 0; j < s.size();) {
+            while (j < s.size() && !(s[j] >= '0' && s[j] <= '9')) {
+                current_element += s[j];
+                j++;
+            }
+            while (j < s.size() && s[j] >= '0' && s[j] <= '9') {
+                current_num += s[j];
+                j++;
+            }
+            if (!mp.count(current_element))
+                mp[current_element].assign(m, 0);
+            mp[current_element][i] = stod(current_num);
+            current_element = "";
+            current_num = "";
+        }
+    }
+    int element_num = mp.size();
+    vector<vector<double>> matrix;
+    for (auto A : mp) {
+        matrix.push_back(A.second);
+    }
+    int row = 0;
+    int col = 0;
+    while (row < element_num && col < m) {
+        bool valid = false;
+        for (int i = row; i < element_num; i++) {
+            if (abs(matrix[i][col]) > 1e-6)
+                valid = true;
+        }
+        if (!valid) {
+            col++;
+            continue;
+        } else {
+            if (abs(matrix[row][col]) < 1e-6) {
+                bool is_find = false;
+                for (int i = row + 1; i < element_num; i++) {
+                    if (abs(matrix[i][col]) > 1e-6) {
+                        swap(matrix[row], matrix[i]);
+                        is_find = true;
+                        break;
+                    }
+                }
+                if (!is_find) {
+                    col++;
+                    continue;
+                }
+            }
+            for (int i = row + 1; i < element_num; i++) {
+                if (abs(matrix[i][col]) < 1e-6) {
+                    continue;
+                }
+                double mul = matrix[i][col] / matrix[row][col];
+                for (int j = col; j < m; j++) {
+                    matrix[i][j] -= matrix[row][j] * mul;
+                }
+            }
+        }
+        row++;
+        col++;
+    }
 
-  return 0;
+    int rank = row;
+    if (rank < m) {
+        cout << "Y" << '\n';
+    } else {
+        cout << "N" << '\n';
+    }
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n;
+    cin >> n;
+
+    while (n--) {
+        solve();
+    }
+    return 0;
 }
