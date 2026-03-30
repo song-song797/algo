@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第26次2022年06月</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+    line-height: 1.8; color: #1a1a2e; background: #f0f2f5;
+    padding: 20px;
+}
+.container {
+    max-width: 900px; margin: 0 auto;
+    background: #fff; border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 40px 50px;
+}
+h1 {
+    font-size: 28px; color: #16213e; border-bottom: 3px solid #0f3460;
+    padding-bottom: 12px; margin-bottom: 20px;
+}
+h2 {
+    font-size: 20px; color: #0f3460; margin-top: 28px; margin-bottom: 12px;
+    padding-bottom: 6px; border-bottom: 2px solid #e0e6ed;
+}
+h3 { font-size: 17px; color: #16213e; margin-top: 18px; margin-bottom: 8px; }
+p { margin: 10px 0; text-align: justify; }
+ul, ol { margin: 10px 0 10px 24px; }
+li { margin: 4px 0; }
+strong { color: #0f3460; }
+code {
+    background: #f0f4f8; padding: 2px 6px; border-radius: 4px;
+    font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace;
+    font-size: 0.9em; color: #e94560;
+}
+pre {
+    background: #1a1a2e; color: #e0e0e0; padding: 16px 20px;
+    border-radius: 8px; overflow-x: auto; margin: 14px 0;
+    font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace;
+    font-size: 14px; line-height: 1.6; white-space: pre-wrap;
+}
+pre code { background: none; color: inherit; padding: 0; font-size: inherit; }
+table {
+    width: auto; border-collapse: collapse; margin: 14px 0;
+    font-size: 14px;
+}
+th, td {
+    border: 1px solid #d1d9e6; padding: 8px 12px; text-align: left;
+}
+th { background: #f0f4f8; font-weight: 600; color: #0f3460; }
+tr:nth-child(even) { background: #fafbfc; }
+hr { border: none; border-top: 1px solid #e0e6ed; margin: 30px 0; }
+img { max-width: 100%; height: auto; border-radius: 6px; margin: 10px 0; display: block; }
+.meta { color: #6c757d; font-size: 15px; }
+.meta li { list-style: none; }
+.meta ul { margin-left: 0; padding-left: 0; }
+.problem { margin-bottom: 30px; }
+.problem-header {
+    font-size: 20px; color: #0f3460; margin-top: 28px; margin-bottom: 12px;
+    padding-bottom: 6px; border-bottom: 2px solid #e0e6ed;
+}
+.limits { color: #555; font-size: 14px; margin-bottom: 12px; }
+.test-case { margin: 10px 0; }
+.test-case pre { background: #263238; }
+/* 原始HTML中的样式兼容 */
+span[style] { /* 保留原始 inline style */ }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>第26次2022年06月</h1>
+<div class="meta"><ul>
+<li><strong>考试时长</strong>：240 分钟</li>
+<li><strong>总分</strong>：500 分</li>
+<li><strong>题目数量</strong>：5 题</li>
+<li><strong>编程语言</strong>：C/C++</li>
+</ul></div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 1 题：归一化处理（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目背景</h2><p style="text-align: left;">在机器学习中，对数据进行归一化处理是一种常用的技术。 将数据从各种各样分布调整为平均值为 0、方差为 1 的标准分布，在很多情况下都可以有效地加速模型的训练。</p><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;">这里假定需要处理的数据为 n 个整数 a1,a2,⋯,an。</p><p style="text-align: left;">这组数据的平均值：</p><p style="text-align: left;"><span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="\bar{a} = \frac{a_1 + a_2 + \cdots + a_n}{n}"></span></p><p style="text-align: left;">方差：</p><p style="text-align: left;"><span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="D(a) = \frac{1}{n} \sum_{i=1}^{n} ( a_i - \bar{a} )^2"></span></p><p style="text-align: left;">使用如下函数处理所有数据，得到的 n 个浮点数 f(a1),f(a2),⋯,f(an) 即满足平均值为 0 且方差为 1：</p><p style="text-align: left;"><span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="f(a_i) = \frac{a_i - \bar{a}}{\sqrt{D(a)}}"></span></p><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">第一行包含一个整数 n，表示待处理的整数个数。</p><p style="text-align: left;">第二行包含空格分隔的 n 个整数，依次表示 a1,a2,⋯,an。</p><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">输出共 n 行，每行一个浮点数，依次表示按上述方法归一化处理后的数据 f(a1),f(a2),⋯,f(an)。</p><h2 style="text-align: left;">样例解释</h2><p style="text-align: left;">平均值：aˉ≈276.14285714285717</p><p style="text-align: left;">方差：D(a)≈140060.69387755104</p><p style="text-align: left;">标准差：<span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="\sqrt{D(a)} \approx 374.24683549437134"></span></p><h2 style="text-align: left;">子任务</h2><p style="text-align: left;">全部的测试数据保证 n,∣ai∣≤1000，其中 ∣ai∣ 表示 ai 的绝对值。</p><p style="text-align: left;">且输入的 n 个整数 a1,a2,⋯,an 满足：方差 D(a)≥1。</p><h2 style="text-align: left;">评分方式</h2><p style="text-align: left;">如果你输出的每个浮点数与参考结果相比，均满足绝对误差不大于 10<sup>−4</sup>，则该测试点满分，否则不得分。</p><h2 style="text-align: left;">提示</h2><ul><li style="text-align: left;">C/C++：建议使用 double 类型存储浮点数。</li><li style="text-align: left;">Java：建议使用 double 类型存储浮点数。</li></ul></div>
+<div class="test-case"><p><strong>输入：</strong></p><pre><code>7
+-4 293 0 -22 12 654 1000</code></pre>
+<p><strong>输出：</strong></p><pre><code>-0.7485510379073613
+0.04504284674812264
+-0.7378629047806881
+-0.7966476369773906
+-0.7057985054006686
+1.0096468614303775
+1.9341703768876082</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 2 题：寻宝！大冒险！（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目背景</h2><p style="text-align: left;">暑假要到了。可惜由于种种原因，小 P 原本的出游计划取消。失望的小 P 只能留在西西艾弗岛上度过一个略显单调的假期……直到……</p><p style="text-align: left;">某天，小 P 获得了一张神秘的藏宝图。</p><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;">西西艾弗岛上种有 n 棵树，这些树的具体位置记录在一张绿化图上。 简单地说，西西艾弗岛绿化图可以视作一个大小为 (L+1)×(L+1) 的 01 矩阵 A， 地图左下角（坐标 (0,0)）和右上角（坐标 (L,L)）分别对应 A[0][0] 和 A[L][L]。 其中 A[i][j]=1 表示坐标 (i,j) 处种有一棵树，A[i][j]=0 则表示坐标 (i,j) 处没有树。 换言之，矩阵 A 中有且仅有的 n 个 1 展示了西西艾弗岛上 n 棵树的具体位置。</p><p style="text-align: left;">传说，大冒险家顿顿的宝藏就埋藏在某棵树下。 并且，顿顿还从西西艾弗岛的绿化图上剪下了一小块，制作成藏宝图指示其位置。 具体来说，藏宝图可以看作一个大小为 (S+1)×(S+1) 的 01 矩阵 B（S 远小于 L），对应着 A 中的某一部分。 理论上，绿化图 A 中存在着一处坐标 (x,y)（0≤x,y≤L−S）与藏宝图 B 左下角 (0,0) 相对应，即满足： 对 B 上任意一处坐标 (i,j)（0≤i,j≤S），都有 A[x+i][y+j]=B[i][j]。 当上述条件满足时，我们就认为藏宝图 B 对应着绿化图 A 中左下角为 (x,y)、右上角为 (x+S,y+S) 的区域。</p><p style="text-align: left;">实际上，考虑到藏宝图仅描绘了很小的一个范围，满足上述条件的坐标 (x,y) 很可能存在多个。 请结合西西艾弗岛绿化图中 n 棵树的位置，以及小 P 手中的藏宝图，判断绿化图中有多少处坐标满足条件。</p><p style="text-align: left;">特别地，藏宝图左下角位置一定是一棵树，即 A[x][y]=B[0][0]=1，表示了宝藏埋藏的位置。</p><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">输入的第一行包含空格分隔的三个正整数 n、L 和 S，分别表示西西艾弗岛上树的棵数、绿化图和藏宝图的大小。</p><p style="text-align: left;">由于绿化图尺寸过大，输入数据中仅包含 n 棵树的坐标而非完整的地图；即接下来 n 行每行包含空格分隔的两个整数 x 和 y，表示一棵树的坐标，满足 0≤x,y≤L 且同一坐标不会重复出现。</p><p style="text-align: left;">最后 (S+1) 行输入小 P 手中完整的藏宝图，其中第 i 行（0≤i≤S）包含空格分隔的 (S+1) 个 0 和 1，表示 B[S−i][0]⋯B[S−i][S]。 <strong>需要注意</strong>，最先输入的是 B[S][0]⋯B[S][S] 一行，B[0][0]⋯B[0][S] 一行最后输入。</p><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">输出一个整数，表示绿化图中有多少处坐标可以与藏宝图左下角对应，即可能埋藏着顿顿的宝藏。</p><h2 style="text-align: left;">样例1解释</h2><p style="text-align: left;">绿化图上 (0,0)、(1,1) 和 (2,2) 三处均可能埋有宝藏。</p><h2 style="text-align: left;">样例2解释</h2><p style="text-align: left;">如果将藏宝图左下角与绿化图 (3,3) 处对应，则藏宝图右上角会超出绿化图边界，对应不成功。</p><h2 style="text-align: left;">子任务</h2><p style="text-align: left;">40% 的测试数据满足：L≤50；</p><p style="text-align: left;">70% 的测试数据满足：L≤2000；</p><p style="text-align: left;">全部的测试数据满足：n≤1000、L≤10<sup>9</sup> 且 S≤50。</p><h2 style="text-align: left;">提示</h2><p style="text-align: left;">实际测试数据中不包括答案为 0 的用例。</p></div>
+<div class="test-case"><h3>样例 1</h3>
+<p><strong>输入：</strong></p><pre><code>5 100 2
+0 0
+1 1
+2 2
+3 3
+4 4
+0 0 1
+0 1 0
+1 0 0</code></pre>
+<p><strong>输出：</strong></p><pre><code>3</code></pre>
+<h3>样例 2</h3>
+<p><strong>输入：</strong></p><pre><code>5 4 2
+0 0
+1 1
+2 2
+3 3
+4 4
+0 0 0
+0 1 0
+1 0 0</code></pre>
+<p><strong>输出：</strong></p><pre><code>0</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 3 题：角色授权（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目背景</h2><p style="text-align: left;">为了响应国家发展新基建的倡议，西西艾弗岛上兴建了西西艾弗数据中心，并以此为基础运营了西西艾弗云。作为数据中心的运营和维护方， 西西艾弗云公司十分重视西西艾弗云的网络安全管理工作。众所周知，安全性和便捷性难以兼得，同时， 一个混乱的权限模型可能会导致人员被授予不必要的权限，从而造成安全风险。因此在西西艾弗云公司的网络安全部工作的小 C 专门设计了一种科学的权限模型。</p><p style="text-align: left;">这种安全模型将验证流程分为两个步骤。第一步是验证用户的身份（鉴别），第二步是验证用户的权限（授权）。在第一步， 首先验证一个用户是否是该用户所声称的那个身份。例如，通过验证用户提供的口令（Password）是否正确，或者通过验证用户提供的智能卡是否合法有效。 接下来，在授权的步骤中，权限策略会被检索以便判断来访的用户是否能够操作系统中的某个资源。</p><p style="text-align: left;">为了能够灵活地表达用户和授权之间的关系，西西艾弗云公司设计了一种简洁而灵活的授权模型：基于角色的授权模型。它的思路是：首先设定若干角色， 每个角色中指明了一个清单，表明允许访问的资源的种类、资源的名称和对资源的操作；然后将被前一步骤已经鉴别过的用户和一个或多个角色相关联。 某个用户能够执行的操作，即为与其关联的全部角色中允许的操作的并集。</p><p style="text-align: left;">小 C 将实现授权模型的工作交给了你，希望你能够把它们实现出来。</p><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;"><strong>用户</strong>表示授权模型中的一个已识别的主体，该识别过程由此前的鉴别过程完成。一个用户具有下列要素：</p><ul><li style="text-align: left;">名称：是一个字符串，用于唯一标识一个用户；</li><li style="text-align: left;">用户组：是一个数组，包含若干个字符串，表示该用户所属的用户组。</li></ul><p style="text-align: left;">一个待授权的行为，包括下列要素：</p><ul><li style="text-align: left;">主体：是一个用户，包括试图进行该行为的用户的名称和该用户所属的用户组；</li><li style="text-align: left;">操作：是一个字符串，一般是一个动词，例如 <span style="background-color: rgb(224, 224, 224);"><code>Read</code></span>、<span style="background-color: rgb(224, 224, 224);"><code>Open</code></span>、<span style="background-color: rgb(224, 224, 224);"><code>Close</code></span> 等；</li><li style="text-align: left;">资源：表示该行为的操作对象，由资源种类和资源名称描述。资源种类例如 <span style="background-color: rgb(224, 224, 224);"><code>Door</code></span>、<span style="background-color: rgb(224, 224, 224);"><code>File</code></span> 等；在一个特定的资源种类中，资源名称唯一确定了一个资源。</li></ul><p style="text-align: left;">需要注意的是，一个待授权的行为的主体信息，即用户名称和所属用户组，是由前一步骤的鉴别过程完成的。因此，每次授权过程中， 每个待授权的行为都会包含主体用户和其关联的用户组的信息。由于鉴权过程中的其它因素，同一个名称的用户在先后两次待授权的行为中所属的用户组可能有区别， 不能存储或记忆此前每个待授权的行为中，用户与用户组的关联情况，而是要按照每次待授权的行为中给出的信息独立判断。</p><p style="text-align: left;"><strong>角色</strong>是这种授权模型的基本单位，它指明了一个用户可以执行的操作，角色的清单中描述了角色所允许的操作。一个角色包含下列要素：</p><ul><li style="text-align: left;">名称，是一个字符串，用于唯一标识一个角色；</li><li style="text-align: left;">操作清单，是一个数组，包含一个或多个操作，表示该角色允许执行的操作集合；</li><li style="text-align: left;">资源种类清单，是一个数组，包含一个或多个资源种类，表示该角色允许操作的资源的种类集合；</li><li style="text-align: left;">资源名称清单，是一个数组，包含若干个资源名称，表示该角色允许操作的资源的名称集合。</li></ul><p style="text-align: left;">判断一个角色能否对某个资源执行某个操作的过程是：</p><ol><li style="text-align: left;">检查该角色的操作清单，如果该角色的操作清单中不包含该操作，且该角色的操作清单中也不包含字符串 <span style="background-color: rgb(224, 224, 224);"><code>*</code></span>，那么不能执行该操作；</li><li style="text-align: left;">检查该角色的资源种类清单，如果该角色的资源种类清单中不包含该资源的种类，且该角色的资源种类清单中也不包含字符串 <span style="background-color: rgb(224, 224, 224);"><code>*</code></span>，那么不能执行该操作；</li><li style="text-align: left;">检查该角色的资源名称清单，如果该角色的资源名称清单中不包含该资源的名称，且该角色的资源名称清单不是空数组，那么不能执行该操作；</li><li style="text-align: left;">允许执行该操作。</li></ol><p style="text-align: left;">例如，假设有某个角色 <span style="background-color: rgb(224, 224, 224);"><code>Doorman</code></span>，其允许执行的操作有 <span style="background-color: rgb(224, 224, 224);"><code>Open</code></span> 和 <span style="background-color: rgb(224, 224, 224);"><code>Close</code></span>，其允许操作的资源类型有 <span style="background-color: rgb(224, 224, 224);"><code>Door</code></span>，其允许操作的资源名称有 <span style="background-color: rgb(224, 224, 224);"><code>FrontDoor</code></span> 和 <span style="background-color: rgb(224, 224, 224);"><code>BackDoor</code></span>。 如果某用户与这个角色关联，那么该用户可以对名为 <span style="background-color: rgb(224, 224, 224);"><code>FrontDoor</code></span> 的 <span style="background-color: rgb(224, 224, 224);"><code>Door</code></span> 执行 <span style="background-color: rgb(224, 224, 224);"><code>Open</code></span> 操作，但是不能对 <span style="background-color: rgb(224, 224, 224);"><code>BackDoor</code></span> 的 <span style="background-color: rgb(224, 224, 224);"><code>Door</code></span> 执行 <span style="background-color: rgb(224, 224, 224);"><code>Delete</code></span> 操作。 同时，一个角色能允许进行的操作可以用通配符来表示。例如，另有一个角色 <span style="background-color: rgb(224, 224, 224);"><code>Admin</code></span>，其允许执行的操作有 <span style="background-color: rgb(224, 224, 224);"><code>*</code></span>，允许操作的资源类型是 <span style="background-color: rgb(224, 224, 224);"><code>*</code></span>，其允许操作的资源名称列表为空， 那么与该角色关联的所有用户可以执行任何操作。值得注意的是，一个角色的操作清单，只能用允许列表的方式列举该角色允许进行的操作，而不能禁止角色进行某个操作。</p><p style="text-align: left;"><strong>角色关联</strong>指明了一个用户和一个或多个角色之间的关系。一个角色关联包含下列要素：</p><ul><li style="text-align: left;">角色名称，是一个字符串，用于指明一个角色；</li><li style="text-align: left;">授权对象清单，是一个数组，包含一个或多个用户名称或者用户组名称，表示该角色关联的用户和用户组的集合。</li></ul><p style="text-align: left;">判断一个用户能否执行某个操作的过程是：</p><ol><li style="text-align: left;">检查所有的角色关联的授权对象清单，如果清单中包含该用户的名称，或者该清单中包含该用户所属的某一个用户组的名称，那么选取该角色关联所关联的角色；</li><li style="text-align: left;">对于所有被选取的角色，判断这些角色是否能对该资源执行该操作，如果所有角色都不能执行该操作，那么不能执行该操作；</li><li style="text-align: left;">允许执行该操作。</li></ol><p style="text-align: left;">由此可见，一个角色关联可以将一个角色与多个用户或用户组关联起来。例如，如果有一个角色关联，其关联的角色名称为 <span style="background-color: rgb(224, 224, 224);"><code>Doorman</code></span>，其关联的用户和用户组清单为 用户 <span style="background-color: rgb(224, 224, 224);"><code>foo1</code></span>、用户 <span style="background-color: rgb(224, 224, 224);"><code>foo2</code></span>、用户组 <span style="background-color: rgb(224, 224, 224);"><code>bar</code></span>。那么这些用户会与 <span style="background-color: rgb(224, 224, 224);"><code>Doorman</code></span> 角色关联：</p><ul><li style="text-align: left;">名为 <span style="background-color: rgb(224, 224, 224);"><code>foo1</code></span> 的用户，属于用户组 <span style="background-color: rgb(224, 224, 224);"><code>bar</code></span>；</li><li style="text-align: left;">名为 <span style="background-color: rgb(224, 224, 224);"><code>foo2</code></span> 的用户，属于用户组 <span style="background-color: rgb(224, 224, 224);"><code>barz</code></span>；</li><li style="text-align: left;">名为 <span style="background-color: rgb(224, 224, 224);"><code>foo3</code></span> 的用户，属于用户组 <span style="background-color: rgb(224, 224, 224);"><code>bar</code></span> 和 <span style="background-color: rgb(224, 224, 224);"><code>barz</code></span>。</li></ul><p style="text-align: left;">但是，属于用户组 <span style="background-color: rgb(224, 224, 224);"><code>barz</code></span> 的名为 <span style="background-color: rgb(224, 224, 224);"><code>foo4</code></span> 的用户不能与 <span style="background-color: rgb(224, 224, 224);"><code>Doorman</code></span> 的角色关联。</p><p style="text-align: left;">从上述判断规则可以知道，一个用户可能与多个角色相关联，在这种情况下，该用户允许进行的操作是这些角色被允许进行的操作集合的<strong>并集</strong>。</p><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">输入的第一行包含三个正整数 n、m、q，分别表示角色数量、角色关联数量和待检查的操作数量。</p><p style="text-align: left;">输入接下来的 n 行中，每行表示一个角色，包括空格分隔的若干元素，依次为：</p><ul><li style="text-align: left;">一个字符串，表示该角色的名称；</li><li style="text-align: left;">一个正整数 nv，表示操作清单中包含的操作数量；</li><li style="text-align: left;">nv 个字符串，依次表示操作清单中的操作；</li><li style="text-align: left;">一个正整数 no，表示资源种类清单中包含的资源种类的数量；</li><li style="text-align: left;">no 个字符串，依次表示资源种类清单中的资源种类；</li><li style="text-align: left;">一个非负整数 nn，表示资源名称清单中包含的资源名称的数量；</li><li style="text-align: left;">nn 个字符串，依次表示资源名称清单中的资源名称。</li></ul><p style="text-align: left;">输入接下来的 m 行中，每行表示一个角色关联，包括空格分隔的若干元素，依次为：</p><ul><li style="text-align: left;">一个字符串，表示该角色关联的角色名称；</li><li style="text-align: left;">一个正整数 ns，表示授权对象清单中包含的授权对象的数量；</li><li style="text-align: left;">2ns 个字符串，每两个表示授权对象清单中的授权对象，前一个字符串为 <span style="background-color: rgb(224, 224, 224);"><code>u</code></span> 或 <span style="background-color: rgb(224, 224, 224);"><code>g</code></span>，分别表示这个授权对象是一个用户名称或者用户组名称，后一个字符串为用户名称或者用户组名称。</li></ul><p style="text-align: left;">输入接下来的 q 行中，每行表示一个待授权的行为，包括空格分隔的若干元素，依次为：</p><ul><li style="text-align: left;">一个字符串，表示执行该操作的用户名称；</li><li style="text-align: left;">一个正整数 ng，表示该用户所属的用户组的数量；</li><li style="text-align: left;">ng 个字符串，依次表示该用户所属的用户组的名称；</li><li style="text-align: left;">一个字符串，表示待查操作的名称；</li><li style="text-align: left;">一个字符串，表示被操作的资源种类；</li><li style="text-align: left;">一个字符串，表示被操作的资源名称。</li></ul><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">输出 q 行，每行表示一个操作是否可以被执行，<span style="background-color: rgb(224, 224, 224);"><code>0</code></span> 表示不能执行，<span style="background-color: rgb(224, 224, 224);"><code>1</code></span> 表示可以执行。</p><h2 style="text-align: left;">样例解释</h2><p style="text-align: left;">在本例中，定义了一个名为 <span style="background-color: rgb(224, 224, 224);"><code>op</code></span> 的角色，授予了对任意 <span style="background-color: rgb(224, 224, 224);"><code>door</code></span> 类型的对象的 <span style="background-color: rgb(224, 224, 224);"><code>open</code></span> 操作的权限，同时定义了两个指向 <span style="background-color: rgb(224, 224, 224);"><code>op</code></span> 的角色关联。 注意，可以针对一个角色定义多于一个角色关联。本例给出了三个待授权的行为。其中，第一个行为，授权的主体用户是 <span style="background-color: rgb(224, 224, 224);"><code>xiaoc</code></span>， 该用户所属的用户组 <span style="background-color: rgb(224, 224, 224);"><code>sre</code></span> 被关联 <span style="background-color: rgb(224, 224, 224);"><code>op</code></span> 角色，因此可以执行开门动作。第二个行为中，授权的主体用户是 <span style="background-color: rgb(224, 224, 224);"><code>xiaop</code></span>， 该用户被直接关联了 <span style="background-color: rgb(224, 224, 224);"><code>op</code></span> 角色，因此也可以执行开门动作。第三个行为中，授权的主体用户仍是 <span style="background-color: rgb(224, 224, 224);"><code>xiaoc</code></span>，关联的角色仍为 <span style="background-color: rgb(224, 224, 224);"><code>op</code></span>。但是， 由于 <span style="background-color: rgb(224, 224, 224);"><code>op</code></span> 角色并未被授予 <span style="background-color: rgb(224, 224, 224);"><code>remove</code></span> 操作的权限，因此该动作被拒绝。</p><h2 style="text-align: left;">子任务</h2><p style="text-align: left;">对于 20% 的数据，有 n=m=1，且给出的角色类似于题目正文中用于举例的 <span style="background-color: rgb(224, 224, 224);"><code>Admin</code></span>，允许执行任何操作，且 nv=no=ns=ng=1、nn=0。</p><p style="text-align: left;">对于 40% 的数据，有 1≤n,m≤50，且 nv=no=ns=1、ng≤40、nn=0。</p><p style="text-align: left;">对于 70% 的数据，有 1≤n,m≤50，且 nv,no,ns,ng≤40、nn≤400。</p><p style="text-align: left;">对于 100% 的数据，有：</p><ul><li style="text-align: left;">1≤n,m≤500；</li><li style="text-align: left;">1≤q≤5000；</li><li style="text-align: left;">1≤nv,no,ns,ng≤400；</li><li style="text-align: left;">0≤nn≤400；</li><li style="text-align: left;">全部字符串或为 <span style="background-color: rgb(224, 224, 224);"><code>*</code></span>，或仅包含大写字母、小写字母、数字（<span style="background-color: rgb(224, 224, 224);"><code>A-Za-z0-9</code></span>），且字符数目不超过 10。</li></ul></div>
+<div class="test-case"><p><strong>输入：</strong></p><pre><code>1 2 3
+op 1 open 1 door 0
+op 1 g sre
+op 1 u xiaop
+xiaoc 2 sre ops open door room302
+xiaop 1 ops open door room501
+xiaoc 2 sre ops remove door room302</code></pre>
+<p><strong>输出：</strong></p><pre><code>1
+1
+0</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 4 题：光线追踪（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;">光线追踪是计算机图形学领域的一个重要算法，其原理是追踪一束从光源发出的光，经过不同的反射面，最终到达摄像机处的过程。</p><p style="text-align: left;">在这道问题中，你需要实现一段程序来处理一个简易的光线追踪模型。</p><p style="text-align: left;">在平面中有一些反射面，为方便起见，我们设这些反射面都是线段，与坐标轴成 45 度角摆放，且两个端点的坐标均为<strong>整数</strong>。为进一步简化问题，我们假设所有的反射表面都是<strong>镜面反射</strong>。任何一束光线照射到反射面上（为避免讨论，假设反射面<strong>不含端点</strong>）时，都会改变方向为相应的镜面反射方向。注意，反射面的两侧都可以反射光线。</p><p style="text-align: left;">平面中还有一些激光光源，每个光源位于一个坐标为<strong>整数</strong>的点上，会向某个<strong>水平或竖直</strong>的方向发射一定强度的激光。</p><p style="text-align: left;">所有的反射面都不是完美的，每个反射面有一个折损系数 a ，当强度为 I 的光线照射上去时，反射光线的强度会变成 aI 。为了便于处理，你可以认为所有反射面的材质均不算太好也不算太糟，因此所有的 a 均在 0.2∼0.8 的范围内。</p><p style="text-align: left;">在一些超高速摄影问题中，有时甚至连光速都要考虑在内。在这个问题中，我们不妨假设激光在 1 单位时间内恰好移动 1 单位距离。然而，超高速摄影带来的往往是采样精度的损失，因此对于一束激光，最终采样到的光线强度都是<strong>向下取整</strong>后的数值。特别地，当一束激光的强度小于 1 时，认为其已经完全耗散。</p><p style="text-align: left;">问题的最开始，平面上没有反射面也没有光源。接下来你需要处理若干个操作，每个操作形如：</p><p style="text-align: left;"><span style="background-color: rgb(224, 224, 224);"><code>1 x1 y1 x2 y2 a</code></span>：在平面上插入一个分别以 (x1,y1) 和 (x2,y2) 为端点，反射系数为 a 的反射面，保证反射面与坐标轴成 45 度角摆放，且不与先前已经存在、且还没有被删除的反射面在非端点处相交；另外受到渲染效率的影响，问题中的所有反射面的总长度（可以理解为所有的 ∣x1−x2∣ 之和）不会太大。</p><p style="text-align: left;"><span style="background-color: rgb(224, 224, 224);"><code>2 k</code></span>：删除第 k 个操作插入的反射面，保证第 k 个操作发生在当前操作之前且为一个插入操作，且这个反射面还没有被删除；</p><p style="text-align: left;"><span style="background-color: rgb(224, 224, 224);"><code>3 x y d I t</code></span>：在 (x,y) 位置放置一个光源，发射光线的方向为 d ，强度为 I ，求其所经 t 时刻后光线到达的坐标以及采样得到的光线强度。其中 d 的含义为：d=0 表示沿 x 坐标增加的方向，d=1 表示沿 y 坐标增加的方向，d=2 表示沿 x 坐标减小的方向，d=3 表示沿 y 坐标减小的方向。另外，保证光源不位于当前存在的某个反射面（不含端点）上。注意：如果 t 时刻后光线刚好到达某个反射面，则其强度取反射后的强度。</p><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">第 1 行，一个正整数 m 表示操作的总数量。</p><p style="text-align: left;">接下来 m 行，每行描述一个操作，格式如题目描述。</p><p style="text-align: left;">其中，除了所有的 a 和 I 以外的输入均为绝对值不超过 109 的整数，其中 k 和 t 为正整数；a 和 I 均为小数点后不超过 6 位的正实数，其中 a 在 0.2∼0.8之间， I≤10<sup>9</sup>。</p><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">对于每个查询操作输出一行，3 个整数，形如 <span style="background-color: rgb(224, 224, 224);"><code>x y I</code></span> 表示激光最终到达的位置为 (x,y) ，采样得到的光线强度为 I 。特别地，如果采样到的光线强度为 0 （即光线已耗散），你也就无需关心最终到达的坐标，而只需要输出<span style="background-color: rgb(224, 224, 224);"><code>0 0 0</code></span>即可。</p><p style="text-align: left;">题目数据保证，你可以在计算时直接使用 64 位浮点数的运算和取整操作，而无需担心可能的精度误差问题。</p><h2 style="text-align: left;">数据范围</h2><table style="width: auto;"><tbody><tr><th colSpan="1" rowSpan="1" width="auto">测试点编号</th><th colSpan="1" rowSpan="1" width="auto">m≤</th><th colSpan="1" rowSpan="1" width="auto">特殊性质</th></tr><tr><td colSpan="1" rowSpan="1" width="auto">1∼3</td><td colSpan="1" rowSpan="2" width="auto">1000</td><td colSpan="1" rowSpan="1" width="auto">所有光线的 t≤1000 ，所有输入坐标的绝对值 ≤1000</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">4∼7</td><td colSpan="1" rowSpan="1" width="auto">无</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">8∼10</td><td colSpan="1" rowSpan="4" width="auto">10<sup>5</sup></td><td colSpan="1" rowSpan="1" width="auto">所有光线的 t≤10</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">11∼13</td><td colSpan="1" rowSpan="1" width="auto">所有 1 操作在所有 3 操作之前，且无 2 操作</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">14∼16</td><td colSpan="1" rowSpan="1" width="auto">所有光线的 I=1</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">17∼20</td><td colSpan="1" rowSpan="1" width="auto">无</td></tr></tbody></table><p style="text-align: left;">对于 100% 的数据，保证 m≤10<sup>5</sup> ，所有反射面的 ∣x1−x2∣ 之和不超过 3×10<sup>5</sup> 。</p></div>
+<div class="test-case"><p><strong>输入：</strong></p><pre><code>7
+1 0 4 2 2 0.4
+1 2 2 0 0 0.45
+3 -1 3 0 6 5
+3 1 5 3 2.4 5
+3 0 2 0 3 4
+2 1
+3 1 5 3 2.4 5</code></pre>
+<p><strong>输出：</strong></p><pre><code>0 1 1
+0 0 0
+4 2 3
+0 1 1</code></pre></div>
+</div>
+<hr>
+<div class="problem">
+<h2 class="problem-header">第 5 题：PS无限版（100 分）</h2>
+<p class="limits"><strong>时间限制：1000 ms　|　空间限制：524288 KB</strong></p>
+<div class="question-body"><h2 style="text-align: left;">题目背景</h2><p style="text-align: left;">众所周知，PS 是一款图片编辑软件，编辑图片的本质是操作各像素。</p><p style="text-align: left;">但是，传统的图片编辑只能对有限个像素进行操作，而这对于一名数学系学生是不可忍受的——竟然不能把有限的、离散的问题推广到无穷的、连续的问题，这真是不可忍受。</p><p style="text-align: left;">正如在线性代数的理论我们为了将有限维线性空间推广到无穷维线性空间所做的那样，现在我们可以假定一张图片是一个无穷大的二维平面（方便起见，我们假定它是一个平面直角坐标系），其上的每个像素可以用 (a,b) 表示（注意，a,b 是实数）。类似于线性代数无穷维线性空间关于基的讨论，我们实际上不关心所有的像素，而只关注于其中的有限个像素，通过对每一组有限大小的像素集的刻画来描述图片整体的编辑情况。</p><p style="text-align: left;">当然，尽管在原理上成功的把 PS 升级成了 PSI(PS Infinite)，但就结论而言，我们应当讨论传统 PS 中的各种操作在 PSI 上的推广和实现。出于简单起见，我们只考虑平移、旋转、放缩、对称和投影这些基本的编辑操作。</p><h2 style="text-align: left;">题目描述</h2><p style="text-align: left;">给定正整数 n 平面上一些点<span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="{(x_i,y_i)}_{i=1}^n\subset \Re^2"></span>，支持以下操作：</p><ol><li style="text-align: left;">1 l r a b：将编号在 [l,r] 中的点平移<span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="\vec v=(a,b)"></span>。</li></ol><ul><li style="text-align: left;">即沿 <span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="\vec v"></span> 方向平移 <span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="|\vec v|"></span>的距离。</li></ul><ol><li style="text-align: left;">2 l r a b θ：将编号在 [l,r] 中的点以 (a,b) 为中心<strong>逆</strong>时针旋转 θ</li></ol><ul><li style="text-align: left;">保证 θ∈(−π,π)，以弧度制给出。</li></ul><ol><li style="text-align: left;">3 l r a b λ：将编号在 [l,r] 中的点以 (a,b) 为中心放缩 ∣λ∣ 倍</li></ol><ul><li style="text-align: left;">即在指向 (a,b) 的方向所在直线上移动，距离缩小 (∣λ∣&lt;1) 或变大 (∣λ∣&gt;1)。</li><li style="text-align: left;">例如 λ=0 即变为 (a,b)，λ&lt;0 则其相对于 (a,b) 的方向会相反。</li></ul><ol><li style="text-align: left;">4 l r θ y0：将编号在 [l,r] 中的点以 y=(tan⁡θ)x+y0 为对称轴做对称变换</li></ol><ul><li style="text-align: left;">保证 θ∈(−π2,π2)，以弧度制给出。</li><li style="text-align: left;">例如，θ=0,y0=0 即沿 x 轴对称。</li></ul><ol><li style="text-align: left;">5 l r θ y0：将编号在 [l,r] 中的点投影到 y=(tan⁡θ)x+y0</li></ol><ul><li style="text-align: left;">保证 θ∈(−π2,π2)，以弧度制给出。</li><li style="text-align: left;">例如，θ=0,y0=0 即投影到 x 轴上。</li></ul><ol><li style="text-align: left;">6 l r ：求编号在 [l,r] 中的点的重心</li></ol><ul><li style="text-align: left;">点集 <span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="\{(a_i,b_i)\}^m_{i=1}"></span> 的重心定义为 <span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="(\sum_{i=1}^m a_i/m,\sum_{i=1}^m b_i/m)"></span>。</li></ul><ol><li style="text-align: left;">7 l r a b：求编号在 [l,r] 中的点到 (a,b) 的距离的平方的和（注意，不是距离的和的平方）</li></ol><ul><li style="text-align: left;">点集<span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="\{(a_i,b_i)\}^m_{i=1}"></span> 到 (a,b) 的距离的平方的和即 <span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="\sum_{i=1}^m(a_i-a)^2+(b_i-b)^2"></span>。</li></ul><h2 style="text-align: left;">输入格式</h2><p style="text-align: left;">从标准输入读入数据。</p><p style="text-align: left;">第一行一个整数 n,q 表示点数和操作数。</p><p style="text-align: left;">接下来 n 行，每行两个实数表示 (xi,yi)。</p><p style="text-align: left;">接下来 q 行，每行若干实数表示一次操作，保证格式同题面。</p><h2 style="text-align: left;">输出格式</h2><p style="text-align: left;">输出到标准输出。</p><p style="text-align: left;">若干行，每行依次对 6 和 7 操作输出两个或一个实数，表示所求的重心坐标或距离平方和。</p><h2 style="text-align: left;">样例2</h2><p style="text-align: left;">见题目目录下的 <em>2.in</em> 与 <em>2.ans</em>。</p><h2 style="text-align: left;">样例2解释</h2><p style="text-align: left;">该样例中仅有 1,3,6 操作，且 n,q≤2000。</p><h2 style="text-align: left;">样例3</h2><p style="text-align: left;">见题目目录下的 <em>3.in</em> 与 <em>3.ans</em>。</p><h2 style="text-align: left;">样例3解释</h2><p style="text-align: left;">该样例中仅有 1,3,6,7 操作，且 n,q≤2000。</p><h2 style="text-align: left;">样例4</h2><p style="text-align: left;">见题目目录下的 <em>4.in</em> 与 <em>4.ans</em>。</p><h2 style="text-align: left;">样例4解释</h2><p style="text-align: left;">该样例中仅有 1,2,3,6,7 操作，且 n,q≤2000。</p><h2 style="text-align: left;">样例5</h2><p style="text-align: left;">见题目目录下的 <em>5.in</em> 与 <em>5.ans</em>。</p><h2 style="text-align: left;">样例5解释</h2><p style="text-align: left;">该样例中 n,q≤2000。</p><h2 style="text-align: left;">样例6</h2><p style="text-align: left;">见题目目录下的 <em>6.in</em> 与 <em>6.ans</em>。</p><h2 style="text-align: left;">样例6解释</h2><p style="text-align: left;">该样例与最终评测时子任务 7 的数据强度相同。</p><h1 style="text-align: left;">数据范围</h1><table style="width: auto;"><tbody><tr><th colSpan="1" rowSpan="1" width="auto">子任务编号</th><th colSpan="1" rowSpan="1" width="auto">n≤</th><th colSpan="1" rowSpan="1" width="auto">q≤</th><th colSpan="1" rowSpan="1" width="auto">可能出现的操作编号</th><th colSpan="1" rowSpan="1" width="auto">子任务分值</th></tr><tr><td colSpan="1" rowSpan="1" width="auto">1</td><td colSpan="1" rowSpan="3" width="auto">2,000</td><td colSpan="1" rowSpan="3" width="auto">2,000</td><td colSpan="1" rowSpan="1" width="auto">1,3,6,7</td><td colSpan="1" rowSpan="3" width="auto">10</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">2</td><td colSpan="1" rowSpan="1" width="auto">1,2,3,6,7</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">3</td><td colSpan="1" rowSpan="1" width="auto">1,2,3,4,5,6,7</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">4</td><td colSpan="1" rowSpan="4" width="auto">5×10<sup>5</sup></td><td colSpan="1" rowSpan="4" width="auto">2×10<sup>4</sup></td><td colSpan="1" rowSpan="1" width="auto">1,3,6</td><td colSpan="1" rowSpan="3" width="auto">20</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">5</td><td colSpan="1" rowSpan="1" width="auto">1,3,6,7</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">6</td><td colSpan="1" rowSpan="1" width="auto">1,2,3,6,7</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">7</td><td colSpan="1" rowSpan="1" width="auto">1,2,3,4,5,6,7</td><td colSpan="1" rowSpan="1" width="auto">10</td></tr></tbody></table><h2 style="text-align: left;">提示</h2><p style="text-align: left;">为了避免精度误差，评测时选手的输出与标准程序的输出相对或绝对误差不超过 10<sup>−3</sup> 即算通过。</p><p style="text-align: left;">其中，实数 a,b 的绝对误差即 ∣a−b∣，相对误差即 <span data-w-e-type="formula" data-w-e-is-void="" data-w-e-is-inline="" data-value="\frac{|a-b|}{\max(|a|,|b|)}"></span>。</p><p style="text-align: left;">保证任意时刻任意一点的横纵坐标的绝对值均不超过 10<sup>6</sup>。</p></div>
+<div class="test-case"><p><strong>输入：</strong></p><pre><code>10 20
+26.389153 -31.339463
+-98.664509 -58.061567
+16.023894 14.489272
+-67.840842 -74.793309
+19.790708 -87.062719
+31.541964 88.441505
+-75.918013 24.526470
+57.288832 -39.033977
+38.274184 -67.446883
+-90.906424 -73.528612
+3 4 4 32.938694 -6.774595 1.000221
+1 2 6 69.965610 -39.563795
+4 3 10 -1.399075 38.282976
+4 6 7 -1.016301 61.080461
+7 9 10 76.549276 22.856189
+7 3 7 -96.501727 5.585970
+6 8 9
+4 2 8 1.215917 -90.918350
+7 4 8 55.948842 38.373278
+1 5 9 -83.845362 -6.619437
+5 6 9 -1.202044 -90.146760
+7 1 4 -81.574047 -56.555229
+3 1 5 75.690820 60.620104 0.980271
+4 5 9 1.512746 89.531420
+5 2 5 0.071305 79.784122
+6 2 4
+1 3 6 90.288492 72.829660
+6 4 4
+7 1 10 -51.991614 -6.732535
+5 5 6 0.087950 71.164056</code></pre>
+<p><strong>输出：</strong></p><pre><code>21029.678359
+120220.146461
+-14.172376 -63.985055
+95006.134951
+52111.910474
+2.849235 79.987632
+35.040886 148.667661
+302347.683678</code></pre></div>
+</div>
+<hr>
+</div>
+</body>
+</html>

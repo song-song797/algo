@@ -1,0 +1,116 @@
+﻿{
+  "explorer.sortOrder": "default",
+  "cmake.cmakePath": "C:\\Users\\86189\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe",
+  "cmake.useCMakePresets": "always",
+  "cmake.configureOnOpen": false,
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.preferredGenerators": [
+    "Ninja"
+  ],
+  "cmake.configureEnvironment": {
+    "PATH": "C:\\Users\\86189\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin;${env:PATH}"
+  },
+  "cmake.buildEnvironment": {
+    "PATH": "C:\\Users\\86189\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin;${env:PATH}"
+  },
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\Users\\86189\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin;${env:PATH}"
+  },
+  "files.exclude": {
+    "**/.agent": true,
+    "**/.cache": true,
+    "**/.idea": true,
+    "**/.vs": true
+  },
+  // ═══ 编辑器补全核心开关 ═══
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggest.enabled": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "on",
+  "editor.wordBasedSuggestions": "allDocuments",
+  "editor.hover.enabled": "on",
+  "editor.parameterHints.enabled": true,
+  // ═══ 补全项类型全部启用 ═══
+  "editor.suggest.showMethods": true,
+  "editor.suggest.showFunctions": true,
+  "editor.suggest.showVariables": true,
+  "editor.suggest.showClasses": true,
+  "editor.suggest.showKeywords": true,
+  "editor.suggest.showSnippets": true,
+  "editor.suggest.showValues": true,
+  "editor.suggest.showConstants": true,
+  "editor.suggest.showEnums": true,
+  "editor.suggest.showEnumMembers": true,
+  "editor.suggest.showInterfaces": true,
+  "editor.suggest.showStructs": true,
+  "editor.suggest.showModules": true,
+  "editor.suggest.showProperties": true,
+  "editor.suggest.showEvents": true,
+  "editor.suggest.showOperators": true,
+  "editor.suggest.showUnits": true,
+  "editor.suggest.showReferences": true,
+  "editor.suggest.showTypeParameters": true,
+  // ═══ C/C++ IntelliSense ═══
+  "C_Cpp.autocomplete": "default",
+  "C_Cpp.hover": "default",
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+  "C_Cpp.default.compilerPath": "C:\\Users\\86189\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\g++.exe",
+  "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+  "C_Cpp.default.cppStandard": "gnu++17",
+  "C_Cpp.debugShortcut": true,
+  "C_Cpp.workspaceParsingPriority": "low",
+  "C_Cpp.files.exclude": {
+    "**/.vs": true,
+    "**/.idea": true,
+    "**/.agent": true,
+    "**/.cache": true,
+    "**/build": true,
+    "**/cmake-build": true,
+    "**/cmake-build-debug": true,
+    "**/out": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.vs/**": true,
+    "**/.idea/**": true,
+    "**/.agent/**": true,
+    "**/.cache/**": true,
+    "**/build/**": true,
+    "**/cmake-build/**": true,
+    "**/cmake-build-debug/**": true,
+    "**/out/**": true
+  },
+  "search.exclude": {
+    "**/.vs": true,
+    "**/.idea": true,
+    "**/.agent": true,
+    "**/.cache": true,
+    "**/build": true,
+    "**/cmake-build": true,
+    "**/cmake-build-debug": true,
+    "**/out": true
+  },
+  // ═══ clang-format for C++ ═══
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  }
+}

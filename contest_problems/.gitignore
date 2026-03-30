@@ -1,0 +1,25 @@
+build/
+*.exe
+out/
+build-round-check/
+cmake-build-debug/
+cmake-build/
+.cache/
+*.obj
+*.ilk
+*.pdb
+*.a
+
+# Visual Studio / VS Code
+.vs/
+*.db
+*.sqlite
+*.slnx
+
+# Copilot snapshots
+CopilotSnapshots/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride

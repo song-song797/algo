@@ -1,5 +1,0 @@
-﻿-xc++
--std=gnu++17
---target=x86_64-w64-mingw32
--Wall
--Wextra
