@@ -61,6 +61,7 @@
  */
 
 #include <bits/stdc++.h>
+
 using namespace std;
 struct Queue {
     int l, r;
@@ -75,6 +76,6 @@ int main() {
 
     int n, q;
     cin >> n >> q;
-
+    
     return 0;
 }
