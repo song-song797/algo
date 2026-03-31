@@ -75,13 +75,89 @@
  * 子任务一（10分）：n, m, k, q ≤ 10
  * 子任务二（20分）：n, m, k, q ≤ 100
  * 子任务三（30分）：X = 0，即询问可以离线处理
- * 子任务四（40分）：X = 1，即询问全部强制在线
+ * 子任务四（40分）：X = 1，即询问全部强制在
  */
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-
+struct plan{
+    int s,t;
+};
+bool have_station[100005];
+bool visited[100005];
+set<pair<int,int>> fitted;
+vector<vector<int>> adj;
+bool dfs(int u,int t,int current){
+    if(current==0) return false;
+    if(u==t) return true;
+    bool can_reach=false;
+    visited[u]=true;
+    for(int v:adj[u]){
+        if(visited[v]) continue;
+        int temp=current;
+        if(!fitted.count({u,v})) {
+            temp=current-1;
+            if(temp<0) continue;
+        }
+        if(have_station[v]) temp=2;
+        can_reach=can_reach||dfs(v,t,temp);
+    }
+    visited[u]=false;
+    return can_reach;
+}
 int main() {
+    // 调试时使用文件输入，正式提交时注释掉下面两行
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
 
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int n,X;
+    cin >> n >> X;
+    adj.resize(n+1);
+    for(int i=0;i<n-1;i++){
+        int u,v;
+        cin >> u >> v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
+    int k;
+    cin >> k;
+    for(int i=0;i<k;i++){
+        int x;
+        cin >> x;
+        have_station[x]=true;
+    }
+    int m;
+    cin >> m;
+    vector<plan> plans(m);
+    for(int i=0;i<m;i++){
+        cin >> plans[i].s >> plans[i].t;
+    }
+    int q;
+    cin >> q;
+    int lanstans=0;
+    while(q--){
+        int op;
+        cin >> op;
+        if(op==1){
+            int u1,v1;
+            cin >> u1 >> v1;
+            int u=u1^(X*lanstans);
+            int v=v1^(X*lanstans);
+            fitted.insert({u,v});
+            fitted.insert({v,u});
+        }
+        if(op==2){
+            int count=0;
+            for(int i=0;i<m;i++){
+                if(dfs(plans[i].s,plans[i].t,2)){
+                    count++;
+                }
+            }
+            lanstans=count;
+            cout << count << '\n';
+        }
+    }
     return 0;
 }

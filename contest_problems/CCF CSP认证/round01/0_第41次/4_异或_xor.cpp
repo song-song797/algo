@@ -58,10 +58,70 @@
  * 子任务四（30分）：无特殊限制
  */
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+#define int long long
+signed caculate(int a, int b, int k) {
+    int base = 1;
+    int sum = 0;
+    while (a > 0 || b > 0) {
+        int temp_a = a % k;
+        int temp_b = b % k;
+        sum += ((temp_a + temp_b) % k) * base;
+        a = a / k;
+        b = b / k;
+        base = base * k;
+    }
+    return sum;
+}
+signed mul(int v, int m, int k) {
+    int base = k;
+    int sum = 0;
+    while (v > 0) {
+        int temp = v % k;
+        sum += (temp * m) % k * base;
+        v = v / k;
+        base = base * k;
+    }
+    return sum;
+}
+signed get_f(int x, int k) {
+    if (x == 0)
+        return 0;
+    int low = ((x % k) * (x % k + 1) / 2) % k;
+    int high = mul(x / k, (x % k) + 1, k);
+    return low + high;
+}
+signed main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-int main() {
+    int n, m, k;
+    cin >> n >> m >> k;
 
+    vector<int> a(n + 1, -1);
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+    }
+    while (m--) {
+        int t;
+        cin >> t;
+        if (t == 1) {
+            int l, r, v;
+            cin >> l >> r >> v;
+            for (int i = l; i <= r; i++) {
+                a[i] = caculate(a[i], v, k);
+            }
+        }
+        if (t == 2) {
+            int l, r;
+            cin >> l >> r;
+            int res = 0;
+            for (int i = l; i <= r; i++) {
+                res = caculate(res, get_f(a[i], k), k);
+            }
+            cout << res << '\n';
+        }
+    }
     return 0;
 }
