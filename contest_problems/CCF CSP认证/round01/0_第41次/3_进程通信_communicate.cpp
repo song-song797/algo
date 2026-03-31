@@ -62,19 +62,118 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+const long long INF = 2e18;
+#define int long long
 struct Queue {
     int l, r;
     int cur_pos;
+    bool is_empty;
 };
-struct process {
+struct Process {
     vector<Queue> q_list;
 };
-int main() {
+struct NodeBySize {
+    int l, r, len;
+    bool operator<(const NodeBySize &other) const {
+        if (len != other.len) {
+            return len < other.len;
+        }
+        return l < other.l;
+    }
+};
+struct NodeByAddr {
+    int l, r, len;
+    bool operator<(const NodeByAddr &other) const {
+        return l < other.l;
+    }
+};
+Process p_list[105];
+set<NodeBySize> pool_by_size;
+set<NodeByAddr> pool_by_addr;
+signed main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
     int n, q;
     cin >> n >> q;
-
+    pool_by_size.insert({0, INF, INF + 1});
+    pool_by_addr.insert({0, INF, INF + 1});
+    while (q--) {
+        string op;
+        cin >> op;
+        if (op == "new") {
+            int p, L;
+            cin >> p >> L;
+            auto it = pool_by_size.lower_bound({0, 0, L});
+            cout << it->l << '\n';
+            int old_l = it->l;
+            int old_r = it->r;
+            int old_len = it->len;
+            Queue q1;
+            q1.l = it->l;
+            q1.r = it->l + L - 1;
+            q1.cur_pos = it->l - 1;
+            q1.is_empty = true;
+            p_list[p].q_list.push_back(q1);
+            pool_by_size.erase(it);
+            pool_by_addr.erase({old_l, old_r, old_len});
+            if (old_len - L > 0) {
+                int new_l = old_l + L;
+                pool_by_size.insert({new_l, old_r, old_len - L});
+                pool_by_addr.insert({new_l, old_r, old_len - L});
+            }
+        }
+        if (op == "send") {
+            int p;
+            cin >> p;
+            int sum = 0;
+            for (int i = 0; i < p_list[p].q_list.size(); i++) {
+                int a = p_list[p].q_list[i].l;
+                int b = p_list[p].q_list[i].r;
+                if (p_list[p].q_list[i].is_empty) {
+                    p_list[p].q_list[i].is_empty = false;
+                    p_list[p].q_list[i].cur_pos++;
+                } else {
+                    if (p_list[p].q_list[i].cur_pos < b) {
+                        p_list[p].q_list[i].cur_pos++;
+                    } else {
+                        p_list[p].q_list[i].cur_pos = a;
+                    }
+                }
+                sum += p_list[p].q_list[i].cur_pos;
+            }
+            cout << sum << '\n';
+        }
+        if (op == "delete") {
+            int p, i;
+            cin >> p >> i;
+            auto it = p_list[p].q_list.begin() + i - 1;
+            NodeBySize node1;
+            int target_l = it->l;
+            int target_r = it->r;
+            int target_len = it->r - it->l + 1;
+            p_list[p].q_list.erase(it);
+            auto it_right = pool_by_addr.lower_bound({target_r, 0, 0});
+            if (it_right != pool_by_addr.end() && it_right->l == target_r + 1) {
+                int r_l = it_right->l, r_r = it_right->r, r_len = it_right->len;
+                pool_by_size.erase({r_l, r_r, r_len});
+                pool_by_addr.erase({r_l, r_r, r_len});
+                target_r = r_r;
+            }
+            auto it_left = pool_by_addr.lower_bound({target_l, 0, 0});
+            if (it_left != pool_by_addr.begin()) {
+                it_left--;
+                if (it_left != pool_by_addr.end() && it_left->r + 1 == target_l) {
+                    int l_l = it_left->l, l_r = it_left->r, l_len = it_left->len;
+                    pool_by_size.erase({l_l, l_r, l_len});
+                    pool_by_addr.erase({l_l, l_r, l_len});
+                    target_l = l_l;
+                }
+            }
+            int final_len = target_r - target_l + 1;
+            pool_by_size.insert({target_l, target_r, final_len});
+            pool_by_addr.insert({target_l, target_r, final_len});
+        }
+    }
     return 0;
 }

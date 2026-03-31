@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="CompetitionProblems" targetName="target_120" />
+      <config projectName="CompetitionProblems" targetName="target_121" />
+      <config projectName="CompetitionProblems" targetName="target_38" />
+      <config projectName="CompetitionProblems" targetName="target_39" />
+      <config projectName="CompetitionProblems" targetName="target_43" />
+      <config projectName="CompetitionProblems" targetName="target_44" />
+      <config projectName="CompetitionProblems" targetName="target_41" />
+      <config projectName="CompetitionProblems" targetName="target_42" />
+      <config projectName="CompetitionProblems" targetName="target_47" />
+      <config projectName="CompetitionProblems" targetName="target_48" />
+      <config projectName="CompetitionProblems" targetName="target_45" />
+      <config projectName="CompetitionProblems" targetName="target_46" />
+      <config projectName="CompetitionProblems" targetName="target_126" />
+      <config projectName="CompetitionProblems" targetName="target_127" />
+      <config projectName="CompetitionProblems" targetName="target_128" />
+      <config projectName="CompetitionProblems" targetName="target_129" />
+      <config projectName="CompetitionProblems" targetName="target_122" />
+      <config projectName="CompetitionProblems" targetName="target_123" />
+      <config projectName="CompetitionProblems" targetName="target_40" />
+      <config projectName="CompetitionProblems" targetName="target_124" />
+      <config projectName="CompetitionProblems" targetName="target_125" />
+      <config projectName="CompetitionProblems" targetName="target_110" />
+      <config projectName="CompetitionProblems" targetName="target_49" />
+      <config projectName="CompetitionProblems" targetName="target_54" />
+      <config projectName="CompetitionProblems" targetName="target_55" />
+      <config projectName="CompetitionProblems" targetName="target_52" />
+      <config projectName="CompetitionProblems" targetName="target_53" />
+      <config projectName="CompetitionProblems" targetName="target_119" />
+      <config projectName="CompetitionProblems" targetName="target_58" />
+      <config projectName="CompetitionProblems" targetName="target_59" />
+      <config projectName="CompetitionProblems" targetName="target_56" />
+      <config projectName="CompetitionProblems" targetName="target_57" />
+      <config projectName="CompetitionProblems" targetName="target_115" />
+      <config projectName="CompetitionProblems" targetName="target_116" />
+      <config projectName="CompetitionProblems" targetName="target_117" />
+      <config projectName="CompetitionProblems" targetName="target_118" />
+      <config projectName="CompetitionProblems" targetName="target_111" />
+      <config projectName="CompetitionProblems" targetName="target_50" />
+      <config projectName="CompetitionProblems" targetName="target_112" />
+      <config projectName="CompetitionProblems" targetName="target_51" />
+      <config projectName="CompetitionProblems" targetName="target_113" />
+      <config projectName="CompetitionProblems" targetName="target_114" />
+      <config projectName="CompetitionProblems" targetName="target_18" />
+      <config projectName="CompetitionProblems" targetName="target_19" />
+      <config projectName="CompetitionProblems" targetName="target_16" />
+      <config projectName="CompetitionProblems" targetName="target_17" />
+      <config projectName="CompetitionProblems" targetName="target_21" />
+      <config projectName="CompetitionProblems" targetName="target_22" />
+      <config projectName="CompetitionProblems" targetName="target_20" />
+      <config projectName="CompetitionProblems" targetName="target_108" />
+      <config projectName="CompetitionProblems" targetName="target_25" />
+      <config projectName="CompetitionProblems" targetName="target_109" />
+      <config projectName="CompetitionProblems" targetName="target_26" />
+      <config projectName="CompetitionProblems" targetName="target_23" />
+      <config projectName="CompetitionProblems" targetName="target_24" />
+      <config projectName="CompetitionProblems" targetName="target_104" />
+      <config projectName="CompetitionProblems" targetName="target_105" />
+      <config projectName="CompetitionProblems" targetName="target_106" />
+      <config projectName="CompetitionProblems" targetName="target_107" />
+      <config projectName="CompetitionProblems" targetName="target_100" />
+      <config projectName="CompetitionProblems" targetName="target_101" />
+      <config projectName="CompetitionProblems" targetName="target_102" />
+      <config projectName="CompetitionProblems" targetName="target_103" />
+      <config projectName="CompetitionProblems" targetName="target_29" />
+      <config projectName="CompetitionProblems" targetName="target_27" />
+      <config projectName="CompetitionProblems" targetName="target_28" />
+      <config projectName="CompetitionProblems" targetName="target_32" />
+      <config projectName="CompetitionProblems" targetName="target_33" />
+      <config projectName="CompetitionProblems" targetName="target_30" />
+      <config projectName="CompetitionProblems" targetName="target_31" />
+      <config projectName="CompetitionProblems" targetName="target_36" />
+      <config projectName="CompetitionProblems" targetName="target_37" />
+      <config projectName="CompetitionProblems" targetName="target_34" />
+      <config projectName="CompetitionProblems" targetName="target_35" />
+      <config projectName="CompetitionProblems" targetName="target_87" />
+      <config projectName="CompetitionProblems" targetName="target_88" />
+      <config projectName="CompetitionProblems" targetName="target_85" />
+      <config projectName="CompetitionProblems" targetName="target_86" />
+      <config projectName="CompetitionProblems" targetName="target_89" />
+      <config projectName="CompetitionProblems" targetName="target_80" />
+      <config projectName="CompetitionProblems" targetName="target_83" />
+      <config projectName="CompetitionProblems" targetName="target_84" />
+      <config projectName="CompetitionProblems" targetName="target_81" />
+      <config projectName="CompetitionProblems" targetName="target_82" />
+      <config projectName="CompetitionProblems" targetName="target_151" />
+      <config projectName="CompetitionProblems" targetName="target_152" />
+      <config projectName="CompetitionProblems" targetName="target_150" />
+      <config projectName="CompetitionProblems" targetName="target_10" />
+      <config projectName="CompetitionProblems" targetName="target_98" />
+      <config projectName="CompetitionProblems" targetName="target_11" />
+      <config projectName="CompetitionProblems" targetName="target_99" />
+      <config projectName="CompetitionProblems" targetName="target_96" />
+      <config projectName="CompetitionProblems" targetName="target_97" />
+      <config projectName="CompetitionProblems" targetName="target_14" />
+      <config projectName="CompetitionProblems" targetName="target_15" />
+      <config projectName="CompetitionProblems" targetName="target_12" />
+      <config projectName="CompetitionProblems" targetName="target_13" />
+      <config projectName="CompetitionProblems" targetName="target_90" />
+      <config projectName="CompetitionProblems" targetName="target_91" />
+      <config projectName="CompetitionProblems" targetName="target_94" />
+      <config projectName="CompetitionProblems" targetName="target_95" />
+      <config projectName="CompetitionProblems" targetName="target_92" />
+      <config projectName="CompetitionProblems" targetName="target_93" />
+      <config projectName="CompetitionProblems" targetName="target_140" />
+      <config projectName="CompetitionProblems" targetName="target_141" />
+      <config projectName="CompetitionProblems" targetName="target_142" />
+      <config projectName="CompetitionProblems" targetName="target_143" />
+      <config projectName="CompetitionProblems" targetName="target_65" />
+      <config projectName="CompetitionProblems" targetName="target_66" />
+      <config projectName="CompetitionProblems" targetName="target_63" />
+      <config projectName="CompetitionProblems" targetName="target_64" />
+      <config projectName="CompetitionProblems" targetName="target_69" />
+      <config projectName="CompetitionProblems" targetName="target_67" />
+      <config projectName="CompetitionProblems" targetName="target_68" />
+      <config projectName="CompetitionProblems" targetName="target_148" />
+      <config projectName="CompetitionProblems" targetName="target_149" />
+      <config projectName="CompetitionProblems" targetName="target_144" />
+      <config projectName="CompetitionProblems" targetName="target_61" />
+      <config projectName="CompetitionProblems" targetName="target_145" />
+      <config projectName="CompetitionProblems" targetName="target_62" />
+      <config projectName="CompetitionProblems" targetName="target_146" />
+      <config projectName="CompetitionProblems" targetName="target_147" />
+      <config projectName="CompetitionProblems" targetName="target_60" />
+      <config projectName="CompetitionProblems" targetName="target_130" />
+      <config projectName="CompetitionProblems" targetName="target_131" />
+      <config projectName="CompetitionProblems" targetName="target_132" />
+      <config projectName="CompetitionProblems" targetName="target_76" />
+      <config projectName="CompetitionProblems" targetName="target_77" />
+      <config projectName="CompetitionProblems" targetName="target_74" />
+      <config projectName="CompetitionProblems" targetName="target_75" />
+      <config projectName="CompetitionProblems" targetName="target_78" />
+      <config projectName="CompetitionProblems" targetName="target_79" />
+      <config projectName="CompetitionProblems" targetName="target_9" />
+      <config projectName="CompetitionProblems" targetName="target_137" />
+      <config projectName="CompetitionProblems" targetName="target_8" />
+      <config projectName="CompetitionProblems" targetName="target_138" />
+      <config projectName="CompetitionProblems" targetName="target_7" />
+      <config projectName="CompetitionProblems" targetName="target_139" />
+      <config projectName="CompetitionProblems" targetName="target_6" />
+      <config projectName="CompetitionProblems" targetName="target_5" />
+      <config projectName="CompetitionProblems" targetName="target_133" />
+      <config projectName="CompetitionProblems" targetName="target_4" />
+      <config projectName="CompetitionProblems" targetName="target_72" />
+      <config projectName="CompetitionProblems" targetName="target_134" />
+      <config projectName="CompetitionProblems" targetName="target_3" />
+      <config projectName="CompetitionProblems" targetName="target_73" />
+      <config projectName="CompetitionProblems" targetName="target_135" />
+      <config projectName="CompetitionProblems" targetName="target_2" />
+      <config projectName="CompetitionProblems" targetName="target_70" />
+      <config projectName="CompetitionProblems" targetName="target_1" />
+      <config projectName="CompetitionProblems" targetName="target_136" />
+      <config projectName="CompetitionProblems" targetName="target_71" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0335577f-04f3-4a2e-807a-e7011bd852ee" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2025" />
+    <option name="minorVersion" value="2.3" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3APtyELd5tGxelc231cKyg0xucN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "D:/竞赛真题",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.android.studio.ml.bot.mainConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="CMake 应用程序.target_1">
+    <configuration name="target_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_10" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_10" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_10">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_100" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_100" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_100">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_101" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_101" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_101">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_102" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_102" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_102">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_103" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_103" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_103">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_104" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_104" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_104">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_105" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_105" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_105">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_106" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_106" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_106">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_107" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_107" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_107">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_108" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_108" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_108">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_109" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_109" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_109">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_11" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_11" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_11">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_110" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_110" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_110">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_111" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_111" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_111">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_112" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_112" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_112">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_113" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_113" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_113">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_114" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_114" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_114">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_115" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_115" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_115">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_116" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_116" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_116">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_117" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_117" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_117">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_118" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_118" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_118">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_119" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_119" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_119">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_12" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_12" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_12">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_120" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_120" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_120">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_121" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_121" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_121">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_122" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_122" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_122">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_123" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_123" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_123">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_124" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_124" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_124">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_125" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_125" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_125">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_126" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_126" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_126">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_127" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_127" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_127">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_128" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_128" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_128">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_129" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_129" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_129">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_13" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_13" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_13">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_130" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_130" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_130">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_131" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_131" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_131">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_132" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_132" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_132">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_133" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_133" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_133">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_134" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_134" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_134">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_135" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_135" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_135">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_136" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_136" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_136">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_137" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_137" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_137">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_138" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_138" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_138">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_139" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_139" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_139">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_14" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_14" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_14">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_140" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_140" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_140">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_141" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_141" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_141">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_142" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_142" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_142">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_143" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_143" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_143">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_144" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_144" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_144">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_145" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_145" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_145">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_146" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_146" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_146">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_147" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_147" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_147">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_148" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_148" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_148">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_149" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_149" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_149">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_15" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_15" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_15">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_150" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_150" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_150">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_151" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_151" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_151">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_152" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_152" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_152">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_16" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_16" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_16">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_17" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_17" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_17">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_18" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_18" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_18">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_19" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_19" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_19">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_20" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_20" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_20">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_21" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_21" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_21">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_22" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_22" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_22">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_23" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_23" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_23">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_24" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_24" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_24">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_25" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_25" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_25">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_26" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_26" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_26">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_27" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_27" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_27">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_28" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_28" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_28">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_29" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_29" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_29">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_30" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_30" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_30">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_31" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_31" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_31">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_32" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_32" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_32">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_33" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_33" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_33">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_34" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_34" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_34">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_35" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_35" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_35">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_36" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_36" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_36">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_37" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_37" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_37">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_38" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_38" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_38">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_39" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_39" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_39">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_40" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_40" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_40">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_41" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_41" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_41">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_42" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_42" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_42">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_43" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_43" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_43">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_44" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_44" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_44">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_45" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_45" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_45">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_46" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_46" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_46">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_47" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_47" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_47">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_48" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_48" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_48">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_49" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_49" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_49">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_5">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_50" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_50" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_50">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_51" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_51" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_51">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_52" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_52" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_52">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_53" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_53" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_53">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_54" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_54" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_54">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_55" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_55" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_55">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_56" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_56" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_56">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_57" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_57" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_57">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_58" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_58" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_58">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_59" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_59" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_59">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_6" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_6">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_60" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_60" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_60">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_61" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_61" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_61">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_62" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_62" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_62">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_63" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_63" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_63">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_64" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_64" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_64">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_65" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_65" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_65">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_66" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_66" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_66">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_67" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_67" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_67">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_68" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_68" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_68">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_69" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_69" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_69">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_7" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_7" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_7">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_70" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_70" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_70">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_71" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_71" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_71">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_72" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_72" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_72">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_73" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_73" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_73">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_74" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_74" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_74">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_75" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_75" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_75">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_76" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_76" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_76">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_77" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_77" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_77">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_78" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_78" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_78">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_79" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_79" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_79">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_8" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_8">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_80" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_80" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_80">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_81" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_81" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_81">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_82" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_82" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_82">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_83" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_83" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_83">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_84" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_84" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_84">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_85" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_85" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_85">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_86" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_86" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_86">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_87" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_87" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_87">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_88" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_88" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_88">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_89" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_89" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_89">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_9" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_9" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_9">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_90" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_90" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_90">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_91" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_91" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_91">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_92" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_92" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_92">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_93" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_93" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_93">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_94" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_94" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_94">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_95" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_95" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_95">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_96" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_96" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_96">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_97" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_97" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_97">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_98" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_98" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_98">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="target_99" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompetitionProblems" TARGET_NAME="target_99" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompetitionProblems" RUN_TARGET_NAME="target_99">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake 应用程序.target_100" />
+      <item itemvalue="CMake 应用程序.target_101" />
+      <item itemvalue="CMake 应用程序.target_102" />
+      <item itemvalue="CMake 应用程序.target_103" />
+      <item itemvalue="CMake 应用程序.target_104" />
+      <item itemvalue="CMake 应用程序.target_105" />
+      <item itemvalue="CMake 应用程序.target_106" />
+      <item itemvalue="CMake 应用程序.target_107" />
+      <item itemvalue="CMake 应用程序.target_108" />
+      <item itemvalue="CMake 应用程序.target_109" />
+      <item itemvalue="CMake 应用程序.target_10" />
+      <item itemvalue="CMake 应用程序.target_110" />
+      <item itemvalue="CMake 应用程序.target_111" />
+      <item itemvalue="CMake 应用程序.target_112" />
+      <item itemvalue="CMake 应用程序.target_113" />
+      <item itemvalue="CMake 应用程序.target_114" />
+      <item itemvalue="CMake 应用程序.target_115" />
+      <item itemvalue="CMake 应用程序.target_116" />
+      <item itemvalue="CMake 应用程序.target_117" />
+      <item itemvalue="CMake 应用程序.target_118" />
+      <item itemvalue="CMake 应用程序.target_119" />
+      <item itemvalue="CMake 应用程序.target_11" />
+      <item itemvalue="CMake 应用程序.target_120" />
+      <item itemvalue="CMake 应用程序.target_121" />
+      <item itemvalue="CMake 应用程序.target_122" />
+      <item itemvalue="CMake 应用程序.target_123" />
+      <item itemvalue="CMake 应用程序.target_124" />
+      <item itemvalue="CMake 应用程序.target_125" />
+      <item itemvalue="CMake 应用程序.target_126" />
+      <item itemvalue="CMake 应用程序.target_127" />
+      <item itemvalue="CMake 应用程序.target_128" />
+      <item itemvalue="CMake 应用程序.target_129" />
+      <item itemvalue="CMake 应用程序.target_12" />
+      <item itemvalue="CMake 应用程序.target_130" />
+      <item itemvalue="CMake 应用程序.target_131" />
+      <item itemvalue="CMake 应用程序.target_132" />
+      <item itemvalue="CMake 应用程序.target_133" />
+      <item itemvalue="CMake 应用程序.target_134" />
+      <item itemvalue="CMake 应用程序.target_135" />
+      <item itemvalue="CMake 应用程序.target_136" />
+      <item itemvalue="CMake 应用程序.target_137" />
+      <item itemvalue="CMake 应用程序.target_138" />
+      <item itemvalue="CMake 应用程序.target_139" />
+      <item itemvalue="CMake 应用程序.target_13" />
+      <item itemvalue="CMake 应用程序.target_140" />
+      <item itemvalue="CMake 应用程序.target_141" />
+      <item itemvalue="CMake 应用程序.target_142" />
+      <item itemvalue="CMake 应用程序.target_143" />
+      <item itemvalue="CMake 应用程序.target_144" />
+      <item itemvalue="CMake 应用程序.target_145" />
+      <item itemvalue="CMake 应用程序.target_146" />
+      <item itemvalue="CMake 应用程序.target_147" />
+      <item itemvalue="CMake 应用程序.target_148" />
+      <item itemvalue="CMake 应用程序.target_149" />
+      <item itemvalue="CMake 应用程序.target_14" />
+      <item itemvalue="CMake 应用程序.target_150" />
+      <item itemvalue="CMake 应用程序.target_151" />
+      <item itemvalue="CMake 应用程序.target_152" />
+      <item itemvalue="CMake 应用程序.target_15" />
+      <item itemvalue="CMake 应用程序.target_16" />
+      <item itemvalue="CMake 应用程序.target_17" />
+      <item itemvalue="CMake 应用程序.target_18" />
+      <item itemvalue="CMake 应用程序.target_19" />
+      <item itemvalue="CMake 应用程序.target_1" />
+      <item itemvalue="CMake 应用程序.target_20" />
+      <item itemvalue="CMake 应用程序.target_21" />
+      <item itemvalue="CMake 应用程序.target_22" />
+      <item itemvalue="CMake 应用程序.target_23" />
+      <item itemvalue="CMake 应用程序.target_24" />
+      <item itemvalue="CMake 应用程序.target_25" />
+      <item itemvalue="CMake 应用程序.target_26" />
+      <item itemvalue="CMake 应用程序.target_27" />
+      <item itemvalue="CMake 应用程序.target_28" />
+      <item itemvalue="CMake 应用程序.target_29" />
+      <item itemvalue="CMake 应用程序.target_2" />
+      <item itemvalue="CMake 应用程序.target_30" />
+      <item itemvalue="CMake 应用程序.target_31" />
+      <item itemvalue="CMake 应用程序.target_32" />
+      <item itemvalue="CMake 应用程序.target_33" />
+      <item itemvalue="CMake 应用程序.target_34" />
+      <item itemvalue="CMake 应用程序.target_35" />
+      <item itemvalue="CMake 应用程序.target_36" />
+      <item itemvalue="CMake 应用程序.target_37" />
+      <item itemvalue="CMake 应用程序.target_38" />
+      <item itemvalue="CMake 应用程序.target_39" />
+      <item itemvalue="CMake 应用程序.target_3" />
+      <item itemvalue="CMake 应用程序.target_40" />
+      <item itemvalue="CMake 应用程序.target_41" />
+      <item itemvalue="CMake 应用程序.target_42" />
+      <item itemvalue="CMake 应用程序.target_43" />
+      <item itemvalue="CMake 应用程序.target_44" />
+      <item itemvalue="CMake 应用程序.target_45" />
+      <item itemvalue="CMake 应用程序.target_46" />
+      <item itemvalue="CMake 应用程序.target_47" />
+      <item itemvalue="CMake 应用程序.target_48" />
+      <item itemvalue="CMake 应用程序.target_49" />
+      <item itemvalue="CMake 应用程序.target_4" />
+      <item itemvalue="CMake 应用程序.target_50" />
+      <item itemvalue="CMake 应用程序.target_51" />
+      <item itemvalue="CMake 应用程序.target_52" />
+      <item itemvalue="CMake 应用程序.target_53" />
+      <item itemvalue="CMake 应用程序.target_54" />
+      <item itemvalue="CMake 应用程序.target_55" />
+      <item itemvalue="CMake 应用程序.target_56" />
+      <item itemvalue="CMake 应用程序.target_57" />
+      <item itemvalue="CMake 应用程序.target_58" />
+      <item itemvalue="CMake 应用程序.target_59" />
+      <item itemvalue="CMake 应用程序.target_5" />
+      <item itemvalue="CMake 应用程序.target_60" />
+      <item itemvalue="CMake 应用程序.target_61" />
+      <item itemvalue="CMake 应用程序.target_62" />
+      <item itemvalue="CMake 应用程序.target_63" />
+      <item itemvalue="CMake 应用程序.target_64" />
+      <item itemvalue="CMake 应用程序.target_65" />
+      <item itemvalue="CMake 应用程序.target_66" />
+      <item itemvalue="CMake 应用程序.target_67" />
+      <item itemvalue="CMake 应用程序.target_68" />
+      <item itemvalue="CMake 应用程序.target_69" />
+      <item itemvalue="CMake 应用程序.target_6" />
+      <item itemvalue="CMake 应用程序.target_70" />
+      <item itemvalue="CMake 应用程序.target_71" />
+      <item itemvalue="CMake 应用程序.target_72" />
+      <item itemvalue="CMake 应用程序.target_73" />
+      <item itemvalue="CMake 应用程序.target_74" />
+      <item itemvalue="CMake 应用程序.target_75" />
+      <item itemvalue="CMake 应用程序.target_76" />
+      <item itemvalue="CMake 应用程序.target_77" />
+      <item itemvalue="CMake 应用程序.target_78" />
+      <item itemvalue="CMake 应用程序.target_79" />
+      <item itemvalue="CMake 应用程序.target_7" />
+      <item itemvalue="CMake 应用程序.target_80" />
+      <item itemvalue="CMake 应用程序.target_81" />
+      <item itemvalue="CMake 应用程序.target_82" />
+      <item itemvalue="CMake 应用程序.target_83" />
+      <item itemvalue="CMake 应用程序.target_84" />
+      <item itemvalue="CMake 应用程序.target_85" />
+      <item itemvalue="CMake 应用程序.target_86" />
+      <item itemvalue="CMake 应用程序.target_87" />
+      <item itemvalue="CMake 应用程序.target_88" />
+      <item itemvalue="CMake 应用程序.target_89" />
+      <item itemvalue="CMake 应用程序.target_8" />
+      <item itemvalue="CMake 应用程序.target_90" />
+      <item itemvalue="CMake 应用程序.target_91" />
+      <item itemvalue="CMake 应用程序.target_92" />
+      <item itemvalue="CMake 应用程序.target_93" />
+      <item itemvalue="CMake 应用程序.target_94" />
+      <item itemvalue="CMake 应用程序.target_95" />
+      <item itemvalue="CMake 应用程序.target_96" />
+      <item itemvalue="CMake 应用程序.target_97" />
+      <item itemvalue="CMake 应用程序.target_98" />
+      <item itemvalue="CMake 应用程序.target_99" />
+      <item itemvalue="CMake 应用程序.target_9" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="0335577f-04f3-4a2e-807a-e7011bd852ee" name="更改" comment="" />
+      <created>1772506288775</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772506288775</updated>
+      <workItem from="1772506290154" duration="125000" />
+      <workItem from="1772506432529" duration="192000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
